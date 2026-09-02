@@ -9,53 +9,56 @@
 ## Current Online Presence
 
 - No official website identified.
-- Primarily uses posters and social media for online presence.
+- The business appears to primarily use promotional posters and social media for its online presence.
 
-## Information Observed
+## What We Have Observed
 
-- Photography services
-- Wedding/event photography
-- Birthday/event photography
-- Photoshoots
-- Framed pictures
-- Social events
-- Passport photography
+- The business promotes its services through visual promotional material.
+- Photography and visual presentation appear to be important aspects of its business.
+- A dedicated website could provide a centralized online presence for the business.
 
-## Contact Information
+## Information Currently Available
 
-[Information from poster]
+### Business Information
 
-## Observations
+- Business name: Royal Paparazzi
+- Business type: Photography / Events
 
-- The business currently does not have a dedicated website.
-- Their existing promotional material relies heavily on visual content.
-- Photography is therefore likely to be an important part of the website presentation.
+### Contact Information
 
-## Unknown
+[Information obtained from existing promotional material]
+
+### Social Media
+
+[Information obtained from existing promotional material]
+
+## Unknown / To Be Confirmed
+
+The following information has not yet been verified with the business:
 
 - Exact services offered
-- Preferred branding
+- Business description
+- Location
 - Target customers
-- Pricing/packages
 - Business story
+- Experience/background
+- Preferred contact methods
 - Preferred website content
-- Whether they are interested in a website
-- Whether they have additional photography work available
+- Available photography/gallery material
+- Testimonials
+- Any specific requirements or preferences for a website
+
+## Assumptions
+
+- The business may benefit from a professional website that centralizes its online presence.
+- Photography will likely be an important visual element of the website.
+
+These assumptions should be validated if contact is established.
 
 ## Validation
 
-These unknowns should be confirmed if contact is established.
+Royal Paparazzi has not yet been contacted about the website.
 
-## Summary
+Information currently recorded in this document is based on publicly available material and our observations.
 
-FACT
-We found no official website.
-
-OBSERVATION
-Their current promotion appears to rely heavily on posters/social media.
-
-ASSUMPTION
-A website could give them a more centralized professional presence.
-
-UNKNOWN
-Whether they actually want or need one.
+Any business information that affects the final website should be confirmed before being treated as factual project information.
