@@ -1,0 +1,27 @@
+{
+  "name": "royal-paparazzi-website",
+  "version": "0.1.0",
+  "description": "A professional business website concept developed for Royal Paparazzi, a photography and events business.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EduTheGent/Royal-paparazzi-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EduTheGent/Royal-paparazzi-website/issues"
+  },
+  "homepage": "https://github.com/EduTheGent/Royal-paparazzi-website#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
