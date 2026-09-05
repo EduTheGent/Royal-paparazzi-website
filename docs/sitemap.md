@@ -1,7 +1,10 @@
-# sitemap
+# Sitemap
 
-Home
+## Website Structure
+
+Royal Paparazzi Website
 │
+├── Home
 ├── About
 ├── Services
 ├── Gallery
