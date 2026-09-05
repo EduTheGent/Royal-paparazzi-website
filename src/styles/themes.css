@@ -1,6 +1,20 @@
 /* Default/shared theme values */
 
-:root {
+@theme {
+  --color-background: #0B0C0E;
+  --color-surface: #141519;
+
+  --color-primary: #D92F36;
+  --color-secondary: #9F2026;
+
+  --color-text: #F5F5F5;
+  --color-muted: #A7A7AA;
+
+  --color-border: #303136;
+  --color-on-primary: #FFFFFF;
+}
+
+/* :root {
     --color-background: ...;
     --color-surface: ...;
     --color-primary: ...;
@@ -11,7 +25,7 @@
 }
 
 
-/* Royal Paparazzi theme */
+/* Royal Paparazzi theme *//*
 
 [data-theme="royal"] {
     --color-background: ...;
@@ -24,7 +38,7 @@
 }
 
 
-/* Luxury theme */
+/* Luxury theme *//*
 
 [data-theme="luxury"] {
     --color-background: ...;
@@ -37,18 +51,8 @@
 }
 
 
-/* Warm theme */
+/* Warm theme *//*
 
 [data-theme="warm"] {
     ...
-}
-
-|             | Signature Royal | Luxury Editorial | Warm Celebration   |
-| ----------- | --------------- | ---------------- | ------------------ |
-| Color       | Black + Red     | Charcoal + Gold  | Cream + Terracotta |
-| Typography  | Strong sans     | Serif + sans     | Elegant serif/sans |
-| Corners     | Moderate        | Sharp/subtle     | Softer             |
-| Images      | Dramatic        | Editorial        | Warm               |
-| Buttons     | Bold            | Refined          | Soft               |
-| Layout      | Structured      | Spacious         | Organic            |
-| Personality | Bold            | Premium          | Emotional          |
+} */
