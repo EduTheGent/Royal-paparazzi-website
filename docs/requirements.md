@@ -1,131 +1,148 @@
 # Requirements
 
-## Business Information
+## Website Objective
 
-- Business name
-- Contact information
-- Location
-- Services
-- Social media
-
-## Website Requirements
-
-- Responsive design
-- Home page
-- About section
-- Services
-- Gallery
-- Contact
-- WhatsApp CTA
-
-## Technical Requirements
-
-- Mobile responsive
-- Fast loading
-- Accessible navigation
-- SEO basics
-
-
-
-## Objective
-
-Create a professional online presence for Royal Paparazzi that presents its services and photography work and gives potential customers a clear way to make contact.
+Create a professional website for Royal Paparazzi that establishes a centralized online presence and allows visitors to understand the business, view its work, explore its services, and get in contact.
 
 ## Functional Requirements
 
-### Navigation
+The website must:
 
-- Visitors should be able to navigate between the main pages.
-- Navigation should work on mobile and desktop.
+- Present Royal Paparazzi professionally online.
+- Provide information about the business.
+- Present the services offered.
+- Display photography/event work through a gallery.
+- Provide clear contact information.
+- Provide clear calls to action for contacting the business.
+- Allow visitors to navigate between the main website pages.
+- Work correctly across desktop, tablet, and mobile screen sizes.
+
+## Page Requirements
 
 ### Home
 
-- Present Royal Paparazzi clearly.
-- Communicate the main photography/event offering.
-- Provide clear calls-to-action.
-- Preview important services.
-- Preview selected photography work.
+The Home page must:
+
+- Introduce Royal Paparazzi.
+- Communicate the nature of the business.
+- Highlight the main services.
+- Showcase selected photography/work.
+- Provide clear calls to action.
+- Direct visitors to the relevant pages.
 
 ### About
 
+The About page must:
+
 - Introduce the business.
-- Explain who they are and what they offer.
+- Provide relevant background information.
+- Communicate the business's identity and values where applicable.
 
 ### Services
 
-- Present the available photography services.
-- Provide enough information for visitors to understand the offerings.
+The Services page must:
+
+- Present the services offered by Royal Paparazzi.
+- Clearly explain each service where sufficient information is available.
+- Provide a clear path for visitors to make an inquiry.
 
 ### Gallery
 
-- Present Royal Paparazzi's photography work.
-- Organize images in a visually appropriate way.
+The Gallery page must:
+
+- Showcase Royal Paparazzi's photography/work.
+- Present images in a clear and visually appropriate manner.
+- Allow visitors to view the available work easily.
 
 ### Contact
 
-- Provide relevant contact information.
-- Provide a clear method for contacting the business.
-- Include WhatsApp where appropriate.
+The Contact page must:
+
+- Provide the business's available contact information.
+- Provide clear contact/action options.
+- Make it easy for visitors to initiate an inquiry.
 
 ## Non-Functional Requirements
 
 ### Responsive
 
-The website should work across mobile, tablet and desktop screen sizes.
+The website must provide a usable experience across:
+
+- Mobile devices
+- Tablets
+- Desktop screens
 
 ### Performance
 
-Images and assets should be optimized appropriately.
+The website should:
+
+- Load efficiently.
+- Avoid unnecessarily large assets.
+- Use appropriately optimized images.
 
 ### Accessibility
 
-Basic accessibility practices should be followed.
+The website should:
 
-### Usability
+- Use semantic HTML where appropriate.
+- Provide meaningful alternative text for relevant images.
+- Maintain readable text and sufficient visual contrast.
+- Ensure interactive elements are usable.
 
-Visitors should be able to understand the business and find contact information without unnecessary steps.
+### SEO
 
-## Out of Scope
+The website should include basic SEO setup, including:
+
+- Appropriate page titles.
+- Relevant meta descriptions.
+- Semantic HTML structure.
+- Descriptive image `alt` text where appropriate.
+- A clear page hierarchy.
+
+### Browser Compatibility
+
+The website should function correctly on commonly used modern browsers.
+
+## Technical Requirements
+
+The current version will be developed using:
+
+- HTML
+- Tailwind CSS
+- JavaScript
+
+The website will be deployed as a static website.
+
+## Current Scope
+
+### Included
+
+- Home page
+- About page
+- Services page
+- Gallery page
+- Contact page
+- Responsive design
+- Basic JavaScript interactions where required
+- Basic SEO setup
+- Website deployment
+
+### Out of Scope
+
+The following are intentionally excluded from the current version:
 
 - CMS
-- Authentication
-- Customer accounts
-- Online booking system
-- Payment processing
 - Admin dashboard
 - Database
-- Advanced business management functionality
-  
+- User authentication
+- Booking system
+- Payment processing
+- E-commerce functionality
+- Custom web application functionality
+- Ongoing content management
+- Social media management
+- Domain and hosting renewal
+- Major redesigns after completion
+- Unlimited revisions
 
-# Business requirements
-
-What does Royal Paparazzi do?
-Who are their customers?
-What services do they offer?
-Where are they located?
-How do customers currently contact them?
-What problem should the website solve?
-
-## Website requirements
-
-Responsive
-Mobile-friendly
-Photography-focused
-Easy contact
-WhatsApp CTA
-Services
-Gallery
-About
-Contact
-
-## Technical requirements
-
-HTML
-Tailwind CSS
-JavaScript
-
-## Responsive design
-
-Fast loading
-Basic accessibility
-Basic SEO
+Any potential future functionality should be recorded in `future-features.md` rather than added to the current scope.
