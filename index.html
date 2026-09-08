@@ -1,21 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Royal Paparazzi</title>
-    <meta
-        name="description"
-        content="Royal Paparazzi photography and event services."
-    >
+    <meta name="description" content="Royal Paparazzi photography and event services.">
 
     <link rel="stylesheet" href="./src/styles/output.css">
 </head>
 
 
-<body class="bg-background text-text">
-    <h1 class="text-primary text-4xl font-bold">
+<body class="bg-background text-text mb-40">
+
+    <section class="relative flex items-center bg-background h-[50vh]  mt-20 text-3xl">
+        <div class="flex  p-10 scale-100 ">
+
+            <div class="absolute inset-0 bg-linear-to-r from-background via-muted/40 to-background/90"></div>
+
+            <div class="relative p-3 w-full text-3xl">
+                <p class="text-primary mb-3 text-lg font-semibold uppercase tracking-[0.5em]">Capturing moments.</p>
+                <h1 class=" text-text font-extrabold uppercase leading-none mb-3 l text-6xl">Creating Memories <span
+                        class="block text-primary ">that last forever</span></h1>
+
+                <P class="pt-2 text-muted max-w-[30.9vw] border-t border-muted "><span class="text-primary">Royal
+                        Paparazzi</span> Photography
+                    captures
+                    life's most
+                    beautiful moments with
+                    creativity, passion
+                    and a touch of royalty</P>
+
+                <div class="mt-5 flex gap-4">
+                    <button
+                        class="flex items-center gap-4 rounded-md bg-primary text-text px-6 py-3 text-xs font-semibold uppercase tracking-wide transition ">
+                        BOOK NOW
+
+                        <span>↗</span>
+                    </button>
+
+                    <button
+                        class="flex items-center gap-1.5 rounded-md border border-text text-text px-6 py-3 text-xs font-semibold uppercase tracking-wide transition hover:border-white hover:cursor-progress">
+                        View Gallery
+
+                        <span>▦</span>
+                    </button>
+                </div>
+            </div>
+
+            <div>
+                <img src="./public/images/heroCamera.png" alt="A Camera"
+                    class="relative scale-150 translate-y-5 -translate-15 object-cover">
+            </div>
+
+        </div>
+
+        <div class="absolute top-1/4 right-2 flex flex-col justify-center items-center z-10 gap-5">
+            <div class="w-px h-8 bg-muted"></div>
+            <a href="#">
+                ◎
+            </a>
+            <a href="#">
+                f
+            </a>
+            <a href="#">
+                🖇️
+            </a>
+            <div class="w-px h-8 bg-muted"></div>
+        </div>
+    </section>
+
+    <section class="relative min-h-[60vh]  overflow-hidden bg-red-800 text-white m-auto mt-15 py-5">
+
+        <img src="./public/images/camera.png" alt="Camera" class="absolute right-0 top-1/4  w-1/2 object-cover">
+
+        <div class="absolute inset-0 bg-linear-300 from-primary/10 via-background to-muted"></div>
+
+        <div class="relative mx-auto my-auto flex min-h-10/12  items-center px-8">
+
+            <div class="max-w-xl">
+
+                <p class="mb-3 text-xs font-semibold uppercase tracking-[0.5em] text-red-600">
+                    Capturing Moments.
+                </p>
+
+                <h1 class="text-4xl font-extrabold uppercase leading-none md:text-6xl">
+                    Creating Memories
+                    <span class="block text-red-600">
+                        That Last Forever
+                    </span>
+                </h1>
+
+                <p class="mt-6 max-w-md text-sm leading-6 text-gray-400">
+                    Royal Paparazzi Photography captures life's most
+                    beautiful moments with creativity, passion and
+                    a touch of royalty.
+                </p>
+
+                <div class="mt-8 flex gap-4">
+                    <button
+                        class="flex items-center gap-4 rounded-md bg-red-600 px-6 py-3 text-xs font-semibold uppercase tracking-wide transition hover:bg-red-700">
+                        Book Now
+                        <span>→</span>
+                    </button>
+
+                    <button
+                        class="flex items-center gap-2 rounded-md border border-gray-500 px-6 py-3 text-xs font-semibold uppercase tracking-wide transition hover:border-white">
+                        View Gallery
+                        <span>▦</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="absolute right-8 top-1/2 hidden -translate-y-1/2 flex-col items-center gap-6 md:flex">
+            <div class="h-10 w-px bg-gray-600"></div>
+
+            <a href="#" class="text-gray-300 hover:text-white">
+                ◎
+            </a>
+
+            <a href="#" class="text-gray-300 hover:text-white">
+                f
+            </a>
+
+            <a href="#" class="text-gray-300 hover:text-white">
+                ◉
+            </a>
+
+            <div class="h-10 w-px bg-gray-600"></div>
+        </div>
+
+    </section>
+
+    <h1 class="text-text text-4xl font-bold mt-20">
         Royal Paparazzi
     </h1>
 
@@ -33,6 +153,11 @@
         </button>
     </div>
 
+
+
+
+
     <script src="./src/js/main.js"></script>
 </body>
+
 </html>
