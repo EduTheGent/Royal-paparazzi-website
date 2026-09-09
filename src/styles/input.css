@@ -1,5 +1,2 @@
 @import "tailwindcss";
-
-.btn {
-  @apply px-4 py-2 rounded-lg font-medium bg-amber-700 text-3xl;
-}
+@import "./themes.css"
