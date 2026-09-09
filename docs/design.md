@@ -1025,10 +1025,10 @@ Important subjects should not be cropped out simply to force an image into a pre
 
 Overlays may be used when necessary for:
 
-* Text readability
-* Visual separation
-* Hover interactions
-* Creating stronger contrast
+- Text readability
+- Visual separation
+- Hover interactions
+- Creating stronger contrast
 
 Overlays should remain subtle and should not significantly obscure the underlying photography.
 
@@ -1042,18 +1042,18 @@ Image styling should remain restrained.
 
 Possible treatments include:
 
-* Subtle border radius
-* Minimal borders
-* Gentle shadows where appropriate
-* Slight hover scaling for interactive gallery images
+- Subtle border radius
+- Minimal borders
+- Gentle shadows where appropriate
+- Slight hover scaling for interactive gallery images
 
 Avoid excessive:
 
-* Drop shadows
-* Decorative frames
-* Filters
-* Gradients over every image
-* Artificial effects
+- Drop shadows
+- Decorative frames
+- Filters
+- Gradients over every image
+- Artificial effects
 
 The photography should remain the main visual element.
 
@@ -1063,11 +1063,11 @@ The photography should remain the main visual element.
 
 Images used on the website should:
 
-* Be sufficiently high resolution for their intended display size.
-* Be optimized for web performance.
-* Avoid unnecessary file size.
-* Use appropriate image formats.
-* Include meaningful `alt` text where the image conveys information.
+- Be sufficiently high resolution for their intended display size.
+- Be optimized for web performance.
+- Avoid unnecessary file size.
+- Use appropriate image formats.
+- Include meaningful `alt` text where the image conveys information.
 
 Image optimization will be handled during implementation.
 
