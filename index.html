@@ -12,14 +12,14 @@
 </head>
 
 
-<body class="bg-background text-text mb-40">
+<body class="bg-background text-text my-40">
 
-    <section class="relative flex items-center bg-background h-[50vh]  mt-20 text-3xl">
-        <div class="flex  p-10 scale-100 ">
+    <section class="relative flex items-center justify-center bg-background h-[50vh]  my-20 text-3xl px-8">
+        <div class="lg:grid grid-cols-9 p-10 scale-100 ">
 
-            <div class="absolute inset-0 bg-linear-to-r from-background via-muted/40 to-background/90"></div>
+            <div class="absolute inset-0 bg-linear-to-r from-background via-surface/40 to-background/90"></div>
 
-            <div class="relative p-3 w-full text-3xl">
+            <div class="relative p-3 w-full text-3xl col-span-4">
                 <p class="text-primary mb-3 text-lg font-semibold uppercase tracking-[0.5em]">Capturing moments.</p>
                 <h1 class=" text-text font-extrabold uppercase leading-none mb-3 l text-5xl whitespace-nowrap">Creating
                     Memories <span class="block text-primary ">that last forever</span></h1>
@@ -32,10 +32,10 @@
                     creativity, passion
                     and a touch of royalty</P>
 
-                <div class="mt-5 flex gap-4">
+                <div class="mt-5 flex gap-4 grow uppercase">
                     <button
                         class="flex items-center gap-4 rounded-md bg-primary text-text px-6 py-3 text-xs font-semibold uppercase tracking-wide transition ">
-                        BOOK NOW
+                        book now
 
                         <span>↗</span>
                     </button>
@@ -49,14 +49,14 @@
                 </div>
             </div>
 
-            <div>
+            <div class="col-span-5 max-w-[88%]">
                 <img src="./public/images/heroCamera.png" alt="A Camera"
-                    class="relative scale-150 translate-y-5  object-cover">
+                    class="relative lg:scale-150 translate-y-5 -translate-1 object-cover w-fit">
             </div>
 
         </div>
 
-        <div class="absolute top-1/4 right-2 flex flex-col justify-center items-center z-10 gap-5">
+        <div class="absolute top-1/6 right-5 flex flex-col justify-center items-center z-10 gap-5 text-sm font-bold">
             <div class="w-px h-8 bg-muted"></div>
             <a href="#">
                 ◎
@@ -70,9 +70,6 @@
             <div class="w-px h-8 bg-muted"></div>
         </div>
     </section>
-
-
-
 
 
     <script src="./src/js/main.js"></script>
