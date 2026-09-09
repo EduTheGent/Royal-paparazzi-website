@@ -1,7 +1,5 @@
-/* Default/shared theme values */
-
 @theme {
-  --color-background: #0B0C0E;
+    --color-background: #0B0C0E;
   --color-surface: #141519;
 
   --color-primary: #D92F36;
@@ -14,45 +12,3 @@
   --color-on-primary: #FFFFFF;
 }
 
-/* :root {
-    --color-background: ...;
-    --color-surface: ...;
-    --color-primary: ...;
-    --color-secondary: ...;
-    --color-text: ...;
-    --color-text-muted: ...;
-    --color-border: ...;
-}
-
-
-/* Royal Paparazzi theme *//*
-
-[data-theme="royal"] {
-    --color-background: ...;
-    --color-surface: ...;
-    --color-primary: ...;
-    --color-secondary: ...;
-    --color-text: ...;
-    --color-text-muted: ...;
-    --color-border: ...;
-}
-
-
-/* Luxury theme *//*
-
-[data-theme="luxury"] {
-    --color-background: ...;
-    --color-surface: ...;
-    --color-primary: ...;
-    --color-secondary: ...;
-    --color-text: ...;
-    --color-text-muted: ...;
-    --color-border: ...;
-}
-
-
-/* Warm theme *//*
-
-[data-theme="warm"] {
-    ...
-} */
