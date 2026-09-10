@@ -17,18 +17,18 @@
 
 <body class="bg-background text-text">
 
-    <header class="relative">
+    <header aria-label="Navigation" class="relative">
         <nav class="px-6 py-2 lg:text-2xl items-center flex">
             <div class="flex justify-between w-full">
                 <div>
-                    <img src="./logo.png" alt="" class="text-2xl w-50">
+                    <img src="./public/images/logo.png" alt="" class="text-2xl w-50">
                 </div>
                 <div class="space-x-2 text-text flex items-center gap-3">
-                    <a href="">HOME</a>
-                    <a href="">ABOUT</a>
-                    <a href="">SERVICES</a>
-                    <a href="">GALLERY</a>
-                    <a href="">CONTACT</a>
+                    <a href="#" class="active:border-b active:text-primary border-primary py-3">HOME</a>
+                    <a href="#" class="active:border-b active:text-primary border-primary py-3">ABOUT</a>
+                    <a href="#" class="active:border-b active:text-primary border-primary py-3">SERVICES</a>
+                    <a href="" class="active:border-b active:text-primary border-primary py-3">GALLERY</a>
+                    <a href="" class="active:border-b active:text-primary border-primary py-3">CONTACT</a>
                 </div>
                 <div class="pt-3">
                     <button
@@ -40,210 +40,813 @@
         </nav>
     </header>
 
-    <section
-        class="relative flex items-center justify-center bg-background h-[50vh]  py-8 text-3xl px-8 overflow-hidden box-border min-h-max">
-        <div class="lg:grid grid-cols-9 p-10 scale-100 ">
+    <main>
+        <section aria-label="hero"
+            class="relative flex items-center justify-center bg-background h-[50vh]  py-8 text-3xl px-8 overflow-hidden box-border min-h-max">
+            <div class="lg:grid grid-cols-9 p-10 scale-100 ">
 
-            <div class="absolute inset-0 bg-linear-to-r from-background via-surface/40 to-background/90"></div>
+                <div class="absolute inset-0 bg-linear-to-r from-background via-surface/40 to-background/90"></div>
 
-            <div class="relative p-3 w-full text-3xl col-span-4 items-center self-center">
-                <p class="text-primary mb-3 text-lg font-semibold uppercase tracking-[0.5em]">Capturing moments.</p>
-                <h1 class=" text-text font-extrabold uppercase leading-none mb-3 l text-5xl whitespace-nowrap">Creating
-                    Memories <span class="block text-primary ">that last forever</span></h1>
-                <div class="h-0.5 w-full bg-linear-to-r from-gray-400/60 via-gray-400/30 to-transparent"></div>
+                <div class="relative w-full text-3xl col-span-4 items-center self-center">
+                    <p class="text-primary mb-3 text-lg font-semibold uppercase tracking-[0.5em]">Capturing moments.</p>
+                    <h1 class=" text-text font-extrabold uppercase leading-none mb-3 l text-5xl textspace-nowrap">
+                        Creating
+                        Memories <span class="block text-primary ">that last forever</span></h1>
+                    <div class="h-0.5 w-full bg-linear-to-r from-gray-400/60 via-gray-400/30 to-transparent"></div>
 
-                <P class="pt-2 text-muted max-w-[30.9vw]"><span class="text-primary">Royal
-                        Paparazzi</span> Photography
-                    captures
-                    life's most
-                    beautiful moments with
-                    creativity, passion
-                    and a touch of royalty</P>
+                    <P class="pt-2 text-muted max-w-[30.9vw]"><span class="text-primary">Royal
+                            Paparazzi</span> Photography
+                        captures
+                        life's most
+                        beautiful moments with
+                        creativity, passion
+                        and a touch of royalty</P>
 
-                <div class="mt-5 flex gap-4 grow uppercase">
-                    <button
-                        class="flex items-center gap-4 rounded-md bg-primary text-text px-6 py-3 text-xs font-semibold uppercase tracking-wide transition ">
-                        book now
+                    <div class="mt-5 flex gap-4 grow uppercase">
+                        <button
+                            class="flex items-center gap-4 rounded-md bg-primary text-text px-6 py-3 text-xs font-semibold uppercase tracking-wide transition cursor-pointer">
+                            book now
 
-                        <span>↗</span>
+                            <span>↗</span>
+                        </button>
+
+                        <button
+                            class="flex items-center gap-1.5 rounded-md border border-text text-text px-6 py-3 text-xs font-semibold uppercase tracking-wide transition hover:border-white hover:cursor-pointer">
+                            View Gallery
+
+                            <span>▦</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col-span-5 max-w-[88%]">
+                    <img src="./public/images/heroCamera.png" alt="A Camera"
+                        class="relative lg:scale-150 translate-y-5 -translate-1 object-cover w-fit">
+                </div>
+
+            </div>
+
+            <div
+                class="absolute top-1/6 right-5 flex flex-col justify-center items-center z-10 gap-5 text-sm font-bold">
+                <div class="w-px h-8 bg-muted"></div>
+                <ul class="space-y-5 text-2xl">
+
+                    <li>
+                        <a href="#" aria-label="Instagram" class="text-text transition-colors hover:text-primary">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" aria-label="Facebook" class="text-text transition-colors hover:text-primary">
+                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" aria-label="WhatsApp" class="text-text transition-colors hover:text-primary">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="w-px h-8 bg-muted"></div>
+            </div>
+        </section>
+
+
+        <section aria-labelledby="trust-heading" class="sm:px-6 lg:px-8 min-h-max">
+            <div class="h-0.5 w-full bg-linear-to-r from-transparent-400/60 via-gray-400/30 to-transparent mt-3"></div>
+            <h2 id="trust-heading" class="sr-only">
+                Why choose Royal Paparazzi
+            </h2>
+
+            <ul
+                class="mx-auto grid max-w-7xl grid-cols-2 items-stretch gap-y-3 md:grid-cols-5 lg:grid-cols-6 md:gap-y-0">
+
+                <li class="flex items-center justify-center gap-3 px-3 md:border-r md:border-border">
+                    <i class="fa-regular fa-camera text-2xl text-primary sm:text-3xl" aria-hidden="true"></i>
+
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wide text-text">
+                            Professional
+                        </h3>
+
+                        <p class="mt-0.5 text-[0.65rem] uppercase tracking-wide text-muted sm:text-xs">
+                            High Quality Equipment
+                        </p>
+                    </div>
+                </li>
+
+                <li class="flex items-center justify-center gap-3 px-3 md:border-border">
+                    <i class="fa-solid fa-award text-2xl text-primary sm:text-3xl" aria-hidden="true"></i>
+
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wide text-text">
+                            Experienced
+                        </h3>
+
+                        <p class="mt-0.5 text-[0.65rem] uppercase tracking-wide text-muted sm:text-xs">
+                            Creative Team
+                        </p>
+                    </div>
+                </li>
+
+                <li
+                    class="col-span-2 flex items-center justify-center border border-primary px-4 py-3 text-center md:col-span-1 lg:col-span-2 lg:mx-20">
+                    <div>
+                        <p class="text-2xl font-bold leading-none text-primary sm:text-3xl">
+                            1000+
+                        </p>
+
+                        <h3 class="mt-1 text-xs font-semibold uppercase tracking-wide text-text">
+                            Happy Clients
+                        </h3>
+                    </div>
+                </li>
+
+                <!-- Fast Delivery -->
+                <li class="flex items-center justify-center gap-3 px-3 md:border-r md:border-border">
+                    <i class="fa-solid fa-truck-fast text-2xl text-primary sm:text-3xl" aria-hidden="true"></i>
+
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wide text-text">
+                            Fast Delivery
+                        </h3>
+
+                        <p class="mt-0.5 text-[0.65rem] uppercase tracking-wide text-muted sm:text-xs">
+                            On Time, Every Time
+                        </p>
+                    </div>
+                </li>
+
+                <!-- Affordable -->
+                <li class="flex items-center justify-center gap-3 px-3">
+                    <i class="fa-solid fa-tag text-2xl text-primary sm:text-3xl" aria-hidden="true"></i>
+
+                    <div>
+                        <h3 class="text-sm font-semibold uppercase tracking-wide text-text">
+                            Affordable
+                        </h3>
+
+                        <p class="mt-0.5 text-[0.65rem] uppercase tracking-wide text-muted sm:text-xs">
+                            Packages For Everyone
+                        </p>
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="h-0.5 w-full bg-linear-to-r from-transparent-400/60 via-gray-400/30 to-transparent mt-3"></div>
+        </section>
+
+        <section aria-label="ROYAL PAPARAZZI SERVICES" class="grid grid-cols-6 gap-1 m-3 overflow-hidden px-10 mt-5">
+            <a href="./src/pages/gallery.html#weddings">
+                <article
+                    class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
+                    <div class="flex flex-col text-center items-center p-3">
+                        <img src="./public/images/svg's/wedding-rings.svg" alt="" width="50px">
+                        <h3 class="font-bold uppercase">weddings</h3>
+                        <p class="text-muted text-sm leading-relaxed capitalize">Elegant. timeless. <span
+                                class="block">unforgettable</span></p>
+
+                    </div>
+                    <div class="overflow-hidden aspect-4/3">
+                        <img src="./public/images/wedding-image.jpeg" alt="" class="w-full h-full object-cover">
+                    </div>
+                </article>
+            </a>
+
+            <a href="./src/pages/gallery.html#birthdays">
+                <article
+                    class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
+                    <div class="flex flex-col text-center items-center p-3">
+                        <img src="./public/images/svg's/birthday-cake.svg" alt="" width="50px">
+                        <h3 class="font-bold uppercase">birthday</h3>
+                        <p class="text-muted text-sm leading-relaxed capitalize">celebrate every <span
+                                class="block">special
+                                moment</span></p>
+
+                    </div>
+                    <div class="overflow-hidden aspect-4/3">
+                        <img src="./public/images/birthday-image.jpeg" alt="" class="w-full h-full object-cover">
+                    </div>
+                </article>
+            </a>
+
+            <a href="./src/pages/gallery.html#events">
+                <article
+                    class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
+                    <div class="flex flex-col text-center items-center p-3">
+                        <img src="./public/images/svg's/photoshoot-camera.svg" alt="" width="50px">
+                        <h3 class="font-bold uppercase">Photoshoot</h3>
+                        <p class="text-muted text-sm leading-relaxed capitalize">Portraits that. <span
+                                class="block">speak
+                                volumes.</span></p>
+
+                    </div>
+                    <div class="overflow-hidden aspect-4/3">
+                        <img src="./public/images/photoshoot.jpg" alt="" class="w-full h-full object-cover">
+                    </div>
+                </article>
+            </a>
+
+            <a href="./src/pages/gallery.html#events">
+                <article
+                    class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
+                    <div class="flex flex-col text-center items-center p-3">
+                        <img src="./public/images/svg's/events-people.svg" alt="" width="50px">
+                        <h3 class="font-bold uppercase">events</h3>
+                        <p class="text-muted text-sm leading-relaxed capitalize">from small gatherings <span
+                                class="block">to
+                                grand events.</span></p>
+                    </div>
+                    <div class="overflow-hidden aspect-4/3">
+                        <img src="./public/images/events.jpeg" alt="" class="w-full h-full object-cover">
+                    </div>
+                </article>
+            </a>
+
+            <a href="./src/pages/gallery.html#nature">
+                <article
+                    class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
+                    <div class="flex flex-col text-center items-center p-3">
+                        <img src="./public/images/svg's/outdoor-mountains.svg" alt="" width="50px">
+                        <h3 class="font-bold uppercase">outdoor</h3>
+                        <p class="text-muted text-sm leading-relaxed capitalize">Nature, adventure and<span
+                                class="block">beautiful landscapes.</span></p>
+
+                    </div>
+                    <div class="overflow-hidden aspect-[4/3]">
+                        <img src="./public/images/nature.png" alt="" class="w-full h-full object-cover">
+                    </div>
+                </article>
+            </a>
+
+            <a href="./src/pages/gallery.html#socail-events">
+                <article
+                    class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
+                    <div class="flex flex-col text-center items-center p-3">
+                        <img src="./public/images/svg's/social-events-balloons.svg" alt="" width="50px">
+                        <h3 class="font-bold uppercase">social events</h3>
+                        <p class="text-muted text-sm leading-relaxed capitalize">parties, hangouts and<span
+                                class="block">social
+                                celebrations.</span></p>
+
+                    </div>
+                    <div class="overflow-hidden aspect-4/3">
+                        <img src="./public/images/social-events.jpeg" alt="" class="w-full h-full object-cover">
+                    </div>
+                </article>
+            </a>
+        </section>
+
+        <section aria-labelledby="about-preview-heading" class="my-10 px-6 md:px-10 lg:px-16">
+            <div class="h-0.5 w-full bg-linear-to-r from-transparent-400/60 via-muted to-transparent my-3"></div>
+
+            <div class="w-full max-h-lg flex flex-col lg:flex-row items-start justify-center gap-12 lg:gap-20 py-5">
+                <div class="w-full lg:w-1/2  flex justify-center">
+                    <video class="w-full max-w-2xl h-80 aspect-4/5 object-cover rounded-lg" playsinline muted autoplay
+                        loop poster="./public/images/aboutThumbsnail.png">
+                        <source src="./public/videos/about.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+
+                <div class="w-full lg:w-1/2  flex flex-col  items-center justify-center lg:block ">
+                    <p
+                        class="text-primary mb-3 text-sm md:text-base lg:text-lg font-semibold uppercase tracking-[0.5em]">
+                        About Royal Paparazzi
+                    </p>
+
+                    <h2 id="about-preview-heading"
+                        class="text-text font-extrabold uppercase leading-tight mb-5 text-2xl md:text-3xl lg:text-4xl">
+                        More Than Just Photography
+                    </h2>
+
+                    <p class="text-text/80 text-base md:text-lg mb-5">
+                        Short introduction about Royal Paparazzi...
+                    </p>
+
+                    <a href="./src/pages/about.html" class="inline-block text-primary font-semibold hover:underline">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+
+            <div class="h-0.5 w-full bg-linear-to-r from-transparent-400/60 via-muted to-transparent mt-3"></div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-background text-text pr-5 pl-1.5 border-t border-muted">
+
+        <div class="max-w-7xl mx-auto px-6 sm:px-10 md:px-12 lg:px-0 py-10 lg:py-12">
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.8fr_1fr_1fr] gap-6 lg:gap-0">
+
+                <!-- BRAND -->
+
+                <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
+
+                    <a href="index.html" aria-label="Royal Paparazzi Home" class="block w-full overflow-hidden">
+
+                        <img src="./public/images/logo.png" alt="Royal Paparazzi Photography"
+                            class="md:-translate-x-5 lg:w-7/12 h-auto">
+                    </a>
+
+                    <p class="max-w-xs text-sm leading-6 text-muted">
+                        Capturing life's most beautiful moments
+                        with creativity, passion and professionalism.
+                    </p>
+
+                    <!-- Social Links -->
+                    <nav aria-label="Social media" class="mt-7">
+                        <ul class="flex items-center gap-6 text-xl">
+
+                            <li>
+                                <a href="#" aria-label="Instagram"
+                                    class="text-text transition-colors hover:text-primary">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" aria-label="Facebook"
+                                    class="text-text transition-colors hover:text-primary">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" aria-label="WhatsApp"
+                                    class="text-text transition-colors hover:text-primary">
+                                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" aria-label="YouTube" class="text-text transition-colors hover:text-primary">
+                                    <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+
+
+                <!-- QUICK LINKS -->
+
+                <div
+                    class="text-center lg:text-left self-center lg:border-l-8 lg:border-primary/70 rounded-2xl lg:pl-6 lg:ml-4">
+
+                    <nav aria-labelledby="footer-navigation-heading">
+
+                        <h2 id="footer-navigation-heading" class="mb-5 text-sm font-bold uppercase tracking-wide">
+                            Quick Links
+                        </h2>
+
+                        <ul class="space-y-2.5 text-sm text-muted">
+
+                            <li>
+                                <a href="index.html" class="transition-colors hover:text-primary">
+                                    Home
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./src/pages/about.html" class="transition-colors hover:text-primary">
+                                    About Us
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./src/pages/services.html" class="transition-colors hover:text-primary">
+                                    Services
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="./src/pages/gallery.html" class="transition-colors hover:text-primary">
+                                    Gallery
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="./src/pages/contact.html" class="transition-colors hover:text-primary">
+                                    Contact
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+
+
+                <!-- SERVICES -->
+                <div
+                    class="text-center lg:text-left self-center lg:border-l-8 lg:border-primary/70 rounded-2xl lg:pl-6 hidden md:block">
+
+                    <nav aria-labelledby="footer-services-heading">
+
+                        <h2 id="footer-services-heading" class="mb-5 text-sm font-bold uppercase tracking-wide">
+                            Services
+                        </h2>
+
+                        <ul class="space-y-2.5 text-sm text-muted">
+
+                            <li>
+                                <a href="src/pages/gallery.html#weddings" class="transition-colors hover:text-primary">
+                                    Wedding Photography
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="src/pages/gallery.html#birthdays" class="transition-colors hover:text-primary">
+                                    Birthday Photography
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="src/pages/gallery.html#photoshoots"
+                                    class="transition-colors hover:text-primary">
+                                    Professional Photoshoots
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="src/pages/gallery.html#events" class="transition-colors hover:text-primary">
+                                    Events Photography
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="src/pages/gallery.html#outdoor" class="transition-colors hover:text-primary">
+                                    Outdoor Photography
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="src/pages/gallery.html#social-events"
+                                    class="transition-colors hover:text-primary">
+                                    Social Events
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+
+                <!-- CONTACT -->
+                <div
+                    class="text-center lg:text-left self-center lg:border-l-8 lg:border-primary/70 rounded-2xl lg:pl-6">
+
+                    <address class="not-italic">
+
+                        <h2 class="mb-5 text-sm font-bold uppercase tracking-wide">
+                            Contact Us
+                        </h2>
+
+                        <ul class="space-y-5 text-sm text-muted w-1/2 lg:w-full m-auto">
+
+                            <!-- Location -->
+                            <li class="flex items-start gap-3 justify-[inherit]">
+
+                                <span class="mt-0.5 w-4 shrink-0 text-primary">
+                                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                                </span>
+
+                                <span>
+                                    Lagos, Nigeria
+                                </span>
+
+                            </li>
+
+
+                            <!-- Phone -->
+                            <li class="flex items-start gap-3">
+
+                                <span class="mt-0.5 w-4 shrink-0 text-primary">
+                                    <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                                </span>
+
+                                <a href="tel:+234XXXXXXXXXX" class="transition-colors hover:text-primary">
+                                    +234 XXX XXX XXXX
+                                </a>
+
+                            </li>
+
+
+                            <!-- Email -->
+                            <li class="flex items-start gap-3">
+
+                                <span class="mt-0.5 w-4 shrink-0 text-primary">
+                                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                                </span>
+
+                                <a href="mailto:info@royalpaparazzi.com"
+                                    class="break-all transition-colors hover:text-primary">
+                                    info@royalpaparazzi.com
+                                </a>
+
+                            </li>
+
+                        </ul>
+
+                    </address>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="h-0.5 w-full bg-linear-to-r from-primary/30 via-primary/70 to-primary"></div>
+
+
+        <div class="max-w-7xl mx-auto py-4">
+
+            <div class="flex flex-col gap-5 md:flex-row sm:items-center sm:justify-between text-center ">
+
+                <p class="text-xs text-muted">
+                    &copy; 2026 Royal Paparazzi Photography.
+                    All Rights Reserved.
+                </p>
+
+                <p aria-label="Royal Paparazzi tagline" class="text-xs italic text-primary">
+                    Royal People&nbsp; · &nbsp;Real Moments&nbsp; · &nbsp;Royal Quality
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- GLOBAL FLOATING CONTACT/BOOKING WIDGET -->
+    <div>
+        <!-- FAB -->
+        <button type="button" id="contactFab" aria-label="Open booking and contact options" aria-expanded="false"
+            aria-controls="contactPanel"
+            class="fixed right-3 bottom-5 md:bottom-32 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-on-primary shadow-lg transition hover:scale-105 hover:cursor-pointer"
+            onclick="contactPanel.showModal()">
+            <i class="fa-regular fa-paper-plane text-lg" aria-hidden="true"></i>
+        </button>
+
+
+        <!-- DIALOG -->
+        <dialog id="contactPanel" aria-labelledby="contactPanelTitle"
+            class="m-auto max-h-[85vh] w-[min(90dvw,32rem)] rounded-lg bg-surface p-0 text-text shadow-2xl backdrop:bg-black/70">
+
+            <!-- DIALOG CONTAINER -->
+            <div class="flex max-h-[85vh] flex-col">
+
+                <!-- HEADER -->
+                <header class="relative shrink-0 border-b border-border px-6 py-5">
+
+                    <h2 id="contactPanelTitle" class="text-center text-2xl font-bold">
+                        How Can We Help?
+                    </h2>
+
+                    <p class="mt-1 text-center text-sm text-muted">
+                        Book a session or get in touch with us.
+                    </p>
+
+                    <!-- CLOSE BUTTON -->
+                    <button type="button" id="closeContactPanel" aria-label="Close contact options"
+                        class="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-md text-muted transition hover:bg-primary hover:text-on-primary hover:cursor-pointer"
+                        onclick="contactPanel.close()">
+                        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
                     </button>
 
-                    <button
-                        class="flex items-center gap-1.5 rounded-md border border-text text-text px-6 py-3 text-xs font-semibold uppercase tracking-wide transition hover:border-white hover:cursor-progress">
-                        View Gallery
+                </header>
 
-                        <span>▦</span>
+
+                <!-- VIEW SWITCHER -->
+                <div role="tablist" aria-label="Contact options"
+                    class="flex shrink-0 gap-3 border-b border-border px-6 py-4">
+
+                    <!-- BOOKING TAB -->
+                    <button type="button" role="tab" id="bookingTab" aria-controls="bookingPanel" aria-selected="true"
+                        class="flex-1 rounded-md bg-primary px-4 py-3 text-xs font-semibold uppercase tracking-wide text-on-primary transition hover:cursor-pointer">
+                        Book / Inquire
                     </button>
+
+
+                    <!-- CONTACT TAB -->
+                    <button type="button" role="tab" id="contactTab" aria-controls="contactOptions"
+                        aria-selected="false"
+                        class="flex-1 rounded-md border border-border px-4 py-3 text-xs font-semibold uppercase tracking-wide text-text transition hover:border-primary hover:text-primary hover:cursor-pointer">
+                        Contact
+                    </button>
+
                 </div>
+
+
+                <!-- SCROLLABLE CONTENT -->
+                <div class="min-h-0 overflow-y-auto px-6 py-6">
+
+                    <!-- ========================= -->
+                    <!-- BOOKING / INQUIRY PANEL -->
+                    <!-- ========================= -->
+
+                    <section id="bookingPanel" role="tabpanel" aria-labelledby="bookingTab">
+
+                        <form id="bookingForm" class="space-y-5">
+
+                            <!-- NAME -->
+                            <div>
+                                <label for="booking-name" class="mb-1.5 block text-sm font-medium text-text">
+                                    Name
+                                </label>
+
+                                <input type="text" id="booking-name" name="name" autocomplete="name" required
+                                    class="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm text-text outline-none placeholder:text-muted transition focus:border-primary focus:ring-1 focus:ring-primary"
+                                    placeholder="Your name">
+                            </div>
+
+
+                            <!-- PHONE -->
+                            <div>
+                                <label for="booking-phone" class="mb-1.5 block text-sm font-medium text-text">
+                                    Phone / WhatsApp
+                                </label>
+
+                                <input type="tel" id="booking-phone" name="phone" autocomplete="tel" required
+                                    class="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm text-text outline-none placeholder:text-muted transition focus:border-primary focus:ring-1 focus:ring-primary"
+                                    placeholder="0800 000 0000">
+                            </div>
+
+
+                            <!-- SERVICE -->
+                            <div>
+                                <label for="booking-service" class="mb-1.5 block text-sm font-medium text-text">
+                                    Service
+                                </label>
+
+                                <select id="booking-service" name="service" required
+                                    class="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm text-text outline-none transition focus:border-primary focus:ring-1 focus:ring-primary">
+                                    <option value="">
+                                        Select a service
+                                    </option>
+
+                                    <option value="wedding">
+                                        Wedding
+                                    </option>
+
+                                    <option value="birthday">
+                                        Birthday
+                                    </option>
+
+                                    <option value="photoshoot">
+                                        Photoshoot
+                                    </option>
+
+                                    <option value="events">
+                                        Events
+                                    </option>
+
+                                    <option value="others">
+                                        Other
+                                    </option>
+                                </select>
+                            </div>
+
+
+                            <!-- EVENT DATE -->
+                            <div>
+                                <label for="booking-date" class="mb-1.5 block text-sm font-medium text-text">
+                                    Event Date
+                                </label>
+
+                                <input type="date" id="booking-date" name="event_date"
+                                    class="w-full rounded-md border border-border bg-background px-3 py-2.5 text-sm text-text outline-none transition focus:border-primary focus:ring-1 focus:ring-primary">
+                            </div>
+
+
+                            <!-- MESSAGE -->
+                            <div>
+                                <label for="booking-message" class="mb-1.5 block text-sm font-medium text-text">
+                                    Tell us about your event
+                                </label>
+
+                                <textarea id="booking-message" name="message" rows="4"
+                                    placeholder="Tell us what you need..."
+                                    class="w-full resize-y rounded-md border border-border bg-background px-3 py-2.5 text-sm text-text outline-none placeholder:text-muted transition focus:border-primary focus:ring-1 focus:ring-primary"></textarea>
+                            </div>
+
+
+                            <!-- SUBMIT -->
+                            <button type="submit"
+                                class="flex w-full items-center justify-center rounded-md bg-primary px-6 py-3 text-xs font-semibold uppercase tracking-wide text-on-primary transition hover:brightness-110 hover:cursor-pointer">
+                                Send Inquiry
+                            </button>
+
+                        </form>
+
+                    </section>
+
+
+                    <!-- ========================= -->
+                    <!-- CONTACT PANEL -->
+                    <!-- ========================= -->
+
+                    <section id="contactOptions" role="tabpanel" aria-labelledby="contactTab" hidden>
+
+                        <div class="space-y-3">
+
+                            <!-- WHATSAPP -->
+                            <a href="#" id="whatsappLink"
+                                class="flex items-center gap-4 rounded-md border border-border bg-background p-4 transition hover:border-primary hover:bg-primary/10">
+                                <i class="fa-brands fa-whatsapp text-2xl text-primary" aria-hidden="true"></i>
+
+                                <div>
+                                    <h3 class="font-semibold text-text">
+                                        WhatsApp
+                                    </h3>
+
+                                    <p class="text-sm text-muted">
+                                        Chat with us directly
+                                    </p>
+                                </div>
+                            </a>
+
+
+                            <!-- INSTAGRAM -->
+                            <a href="#" id="instagramLink"
+                                class="flex items-center gap-4 rounded-md border border-border bg-background p-4 transition hover:border-primary hover:bg-primary/10">
+                                <i class="fa-brands fa-instagram text-2xl text-primary" aria-hidden="true"></i>
+
+                                <div>
+                                    <h3 class="font-semibold text-text">
+                                        Instagram
+                                    </h3>
+
+                                    <p class="text-sm text-muted">
+                                        See our latest work
+                                    </p>
+                                </div>
+                            </a>
+
+
+                            <!-- FACEBOOK -->
+                            <a href="#" id="facebookLink"
+                                class="flex items-center gap-4 rounded-md border border-border bg-background p-4 transition hover:border-primary hover:bg-primary/10">
+                                <i class="fa-brands fa-facebook text-2xl text-primary" aria-hidden="true"></i>
+
+                                <div>
+                                    <h3 class="font-semibold text-text">
+                                        Facebook
+                                    </h3>
+
+                                    <p class="text-sm text-muted">
+                                        Connect with us
+                                    </p>
+                                </div>
+                            </a>
+
+
+                            <!-- EMAIL -->
+                            <a href="mailto:" id="emailLink"
+                                class="flex items-center gap-4 rounded-md border border-border bg-background p-4 transition hover:border-primary hover:bg-primary/10">
+                                <i class="fa-regular fa-envelope text-2xl text-primary" aria-hidden="true"></i>
+
+                                <div>
+                                    <h3 class="font-semibold text-text">
+                                        Email
+                                    </h3>
+
+                                    <p class="text-sm text-muted">
+                                        Send us an email
+                                    </p>
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
             </div>
 
-            <div class="col-span-5 max-w-[88%]">
-                <img src="./public/images/heroCamera.png" alt="A Camera"
-                    class="relative lg:scale-150 translate-y-5 -translate-1 object-cover w-fit">
-            </div>
-
-        </div>
-
-        <div class="absolute top-1/6 right-5 flex flex-col justify-center items-center z-10 gap-5 text-sm font-bold">
-            <div class="w-px h-8 bg-muted"></div>
-            <a href="#">
-                ◎
-            </a>
-            <a href="#">
-                f
-            </a>
-            <a href="#">
-                🖇️
-            </a>
-            <div class="w-px h-8 bg-muted"></div>
-        </div>
-    </section>
-
-
-    <section class="grid grid-cols-6 gap-1 m-3 overflow-hidden">
-        <a href="./src/pages/gallery.html#weddings">
-            <article
-                class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
-                <div class="flex flex-col text-center items-center p-3">
-                    <img src="./public/images/svg's/wedding-rings.svg" alt="" width="50px">
-                    <h3 class="font-bold uppercase">weddings</h3>
-                    <p class="text-muted text-sm leading-relaxed capitalize">Elegant. timeless. <span
-                            class="block">unforgettable</span></p>
-
-                </div>
-                <div class="overflow-hidden aspect-4/3">
-                    <img src="./public/images/wedding-image.jpeg" alt="" class="w-full h-full object-cover">
-                </div>
-            </article>
-        </a>
-
-        <a href="./src/pages/gallery.html#birthdays">
-            <article
-                class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
-                <div class="flex flex-col text-center items-center p-3">
-                    <img src="./public/images/svg's/birthday-cake.svg" alt="" width="50px">
-                    <h3 class="font-bold uppercase">birthday</h3>
-                    <p class="text-muted text-sm leading-relaxed capitalize">celebrate every <span class="block">special
-                            moment</span></p>
-
-                </div>
-                <div class="overflow-hidden aspect-4/3">
-                    <img src="./public/images/birthday-image.jpeg" alt="" class="w-full h-full object-cover">
-                </div>
-            </article>
-        </a>
-
-        <a href="./src/pages/gallery.html#events">
-            <article
-                class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
-                <div class="flex flex-col text-center items-center p-3">
-                    <img src="./public/images/svg's/photoshoot-camera.svg" alt="" width="50px">
-                    <h3 class="font-bold uppercase">Photoshoot</h3>
-                    <p class="text-muted text-sm leading-relaxed capitalize">Portraits that. <span class="block">speak
-                            volumes.</span></p>
-
-                </div>
-                <div class="overflow-hidden aspect-4/3">
-                    <img src="./public/images/photoshoot.jpg" alt="" class="w-full h-full object-cover">
-                </div>
-            </article>
-        </a>
-
-        <a href="./src/pages/gallery.html#events">
-            <article
-                class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
-                <div class="flex flex-col text-center items-center p-3">
-                    <img src="./public/images/svg's/events-people.svg" alt="" width="50px">
-                    <h3 class="font-bold uppercase">events</h3>
-                    <p class="text-muted text-sm leading-relaxed capitalize">from small gatherings <span
-                            class="block">to
-                            grand events.</span></p>
-                </div>
-                <div class="overflow-hidden aspect-4/3">
-                    <img src="./public/images/events.jpeg" alt="" class="w-full h-full object-cover">
-                </div>
-            </article>
-        </a>
-
-        <a href="./src/pages/gallery.html#nature">
-            <article
-                class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
-                <div class="flex flex-col text-center items-center p-3">
-                    <img src="./public/images/svg's/outdoor-mountains.svg" alt="" width="50px">
-                    <h3 class="font-bold uppercase">outdoor</h3>
-                    <p class="text-muted text-sm leading-relaxed capitalize">Nature, adventure and<span
-                            class="block">beautiful landscapes.</span></p>
-
-                </div>
-                <div class="overflow-hidden aspect-[4/3]">
-                    <img src="./public/images/nature.png" alt="" class="w-full h-full object-cover">
-                </div>
-            </article>
-        </a>
-
-        <a href="./src/pages/gallery.html#socail-events">
-            <article
-                class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
-                <div class="flex flex-col text-center items-center p-3">
-                    <img src="./public/images/svg's/social-events-balloons.svg" alt="" width="50px">
-                    <h3 class="font-bold uppercase">social events</h3>
-                    <p class="text-muted text-sm leading-relaxed capitalize">parties, hangouts and<span
-                            class="block">social
-                            celebrations.</span></p>
-
-                </div>
-                <div class="overflow-hidden aspect-4/3">
-                    <img src="./public/images/social-events.jpeg" alt="" class="w-full h-full object-cover">
-                </div>
-            </article>
-        </a>
-    </section>
-
-
-    <section class="px-8 bg-background mt-3 flex py-2 justify-between w-full">
-    <div class="border-t border-muted flex gap-x-10">
-        <div class="  flex items-center gap-2 pt-2">
-        <i class="fa-regular fa-camera text-primary  text-3xl"></i>
-            <div class="text-text">
-                <h3>PROFESSIONAL</h3>
-                <p class=" text-muted text-sm">HIGH QUALITY EQUIPMENT</p>
-            </div>
-        </div>
-    
-
-        <div class="  flex items-center gap-2 pt-2">
-        <i class="fa-solid fa-award text-primary text-3xl"></i>
-        <div class="text-text">
-            <h3>EXPERIENCED</h3>
-            <p class=" text-muted text-sm">CREATIVE TEAM</p>
-        </div>
-        </div>
+        </dialog>
     </div>
-
-    <div class="border border-primary p-2 text-center">
-        <h3 class="text-primary font-bold text-2xl">1000+</h3>
-        <p class="text-text font-semibold">HAPPY CLIENTS</p>
-    </div>
-
-    <div class="border-t border-muted flex gap-x-10">
-        <div class="  flex items-center gap-2 pt-2">
-        <i class="fa-solid fa-truck-fast text-primary  text-3xl"></i>
-            <div class="text-text">
-                <h3>FAST DELIVERY</h3>
-                <p class=" text-muted text-sm">ON TIME,EVERY TIME</p>
-            </div>
-        </div>
-    
-
-        <div class="  flex items-center gap-2 pt-2">
-        <i class="fa-solid fa-tag text-primary text-3xl"></i>
-        <div class="text-text">
-            <h3>AFFORDABLE</h3>
-            <p class=" text-muted text-sm">PACKAGE FOR EVERYONE</p>
-        </div>
-        </div>
-    </div>
-</section>
 
     <script src="./src/js/main.js"></script>
 </body>
