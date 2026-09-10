@@ -1,3 +1,34 @@
 @import "tailwindcss";
+@import "./themes.css";
 
-@import "./themes.css"
+/* ===== CUSTOM SCROLLBAR ===== */
+
+hhtml {
+  scrollbar-width: thin;
+  scrollbar-color: #8f151d #090a0c;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090a0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg,
+      #3d0a0f 0%,
+      #8f151d 35%,
+      #5a0d13 50%),
+    #c6202c 100%;
+  border-radius: 999px;
+  border: 1px solid #090a0c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg,
+      #75101a,
+      #e32936,
+      #8f111a);
+}

@@ -1,21 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Royal Paparazzi</title>
-    <meta
-        name="description"
-        content="Royal Paparazzi photography and event services."
-    >
+    <meta name="description" content="Royal Paparazzi photography and event services.">
 
     <link rel="stylesheet" href="./src/styles/output.css">
-
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+
+<body class="bg-background text-text">
+
+    <header class="relative">
+        <nav class="px-6 py-2 lg:text-2xl items-center flex">
+            <div class="flex justify-between w-full">
+                <div>
+                    <img src="./logo.png" alt="" class="text-2xl w-50">
+                </div>
+                <div class="space-x-2 text-text flex items-center gap-3">
+                    <a href="">HOME</a>
+                    <a href="">ABOUT</a>
+                    <a href="">SERVICES</a>
+                    <a href="">GALLERY</a>
+                    <a href="">CONTACT</a>
+                </div>
+                <div class="pt-3">
+                    <button
+                        class=" bg-surface text-primary flex gap-1 border border-primary p-2 text-sm font-semibold items-center">
+                        <i class="fa-regular fa-calendar-days text-primary"></i>BOOK NOW
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section
+        class="relative flex items-center justify-center bg-background h-[50vh]  py-8 text-3xl px-8 overflow-hidden box-border min-h-max">
+        <div class="lg:grid grid-cols-9 p-10 scale-100 ">
+
+            <div class="absolute inset-0 bg-linear-to-r from-background via-surface/40 to-background/90"></div>
+
+            <div class="relative p-3 w-full text-3xl col-span-4 items-center self-center">
+                <p class="text-primary mb-3 text-lg font-semibold uppercase tracking-[0.5em]">Capturing moments.</p>
+                <h1 class=" text-text font-extrabold uppercase leading-none mb-3 l text-5xl whitespace-nowrap">Creating
+                    Memories <span class="block text-primary ">that last forever</span></h1>
+                <div class="h-0.5 w-full bg-linear-to-r from-gray-400/60 via-gray-400/30 to-transparent"></div>
+
+                <P class="pt-2 text-muted max-w-[30.9vw]"><span class="text-primary">Royal
+                        Paparazzi</span> Photography
+                    captures
+                    life's most
+                    beautiful moments with
+                    creativity, passion
+                    and a touch of royalty</P>
+
+                <div class="mt-5 flex gap-4 grow uppercase">
+                    <button
+                        class="flex items-center gap-4 rounded-md bg-primary text-text px-6 py-3 text-xs font-semibold uppercase tracking-wide transition ">
+                        book now
+
+                        <span>↗</span>
+                    </button>
+
+                    <button
+                        class="flex items-center gap-1.5 rounded-md border border-text text-text px-6 py-3 text-xs font-semibold uppercase tracking-wide transition hover:border-white hover:cursor-progress">
+                        View Gallery
+
+                        <span>▦</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-span-5 max-w-[88%]">
+                <img src="./public/images/heroCamera.png" alt="A Camera"
+                    class="relative lg:scale-150 translate-y-5 -translate-1 object-cover w-fit">
+            </div>
+
+        </div>
+
+        <div class="absolute top-1/6 right-5 flex flex-col justify-center items-center z-10 gap-5 text-sm font-bold">
+            <div class="w-px h-8 bg-muted"></div>
+            <a href="#">
+                ◎
+            </a>
+            <a href="#">
+                f
+            </a>
+            <a href="#">
+                🖇️
+            </a>
+            <div class="w-px h-8 bg-muted"></div>
+        </div>
+    </section>
+
+
+    <section class="grid grid-cols-6 gap-1 m-3 overflow-hidden">
+        <a href="./src/pages/gallery.html#weddings">
+            <article
+                class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
+                <div class="flex flex-col text-center items-center p-3">
+                    <img src="./public/images/svg's/wedding-rings.svg" alt="" width="50px">
+                    <h3 class="font-bold uppercase">weddings</h3>
+                    <p class="text-muted text-sm leading-relaxed capitalize">Elegant. timeless. <span
+                            class="block">unforgettable</span></p>
+
+                </div>
+                <div class="overflow-hidden aspect-4/3">
+                    <img src="./public/images/wedding-image.jpeg" alt="" class="w-full h-full object-cover">
+                </div>
+            </article>
+        </a>
+
+        <a href="./src/pages/gallery.html#birthdays">
+            <article
+                class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
+                <div class="flex flex-col text-center items-center p-3">
+                    <img src="./public/images/svg's/birthday-cake.svg" alt="" width="50px">
+                    <h3 class="font-bold uppercase">birthday</h3>
+                    <p class="text-muted text-sm leading-relaxed capitalize">celebrate every <span class="block">special
+                            moment</span></p>
+
+                </div>
+                <div class="overflow-hidden aspect-4/3">
+                    <img src="./public/images/birthday-image.jpeg" alt="" class="w-full h-full object-cover">
+                </div>
+            </article>
+        </a>
+
+        <a href="./src/pages/gallery.html#events">
+            <article
+                class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
+                <div class="flex flex-col text-center items-center p-3">
+                    <img src="./public/images/svg's/photoshoot-camera.svg" alt="" width="50px">
+                    <h3 class="font-bold uppercase">Photoshoot</h3>
+                    <p class="text-muted text-sm leading-relaxed capitalize">Portraits that. <span class="block">speak
+                            volumes.</span></p>
+
+                </div>
+                <div class="overflow-hidden aspect-4/3">
+                    <img src="./public/images/photoshoot.jpg" alt="" class="w-full h-full object-cover">
+                </div>
+            </article>
+        </a>
+
+        <a href="./src/pages/gallery.html#events">
+            <article
+                class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
+                <div class="flex flex-col text-center items-center p-3">
+                    <img src="./public/images/svg's/events-people.svg" alt="" width="50px">
+                    <h3 class="font-bold uppercase">events</h3>
+                    <p class="text-muted text-sm leading-relaxed capitalize">from small gatherings <span
+                            class="block">to
+                            grand events.</span></p>
+                </div>
+                <div class="overflow-hidden aspect-4/3">
+                    <img src="./public/images/events.jpeg" alt="" class="w-full h-full object-cover">
+                </div>
+            </article>
+        </a>
+
+        <a href="./src/pages/gallery.html#nature">
+            <article
+                class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
+                <div class="flex flex-col text-center items-center p-3">
+                    <img src="./public/images/svg's/outdoor-mountains.svg" alt="" width="50px">
+                    <h3 class="font-bold uppercase">outdoor</h3>
+                    <p class="text-muted text-sm leading-relaxed capitalize">Nature, adventure and<span
+                            class="block">beautiful landscapes.</span></p>
+
+                </div>
+                <div class="overflow-hidden aspect-[4/3]">
+                    <img src="./public/images/nature.png" alt="" class="w-full h-full object-cover">
+                </div>
+            </article>
+        </a>
+
+        <a href="./src/pages/gallery.html#socail-events">
+            <article
+                class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
+                <div class="flex flex-col text-center items-center p-3">
+                    <img src="./public/images/svg's/social-events-balloons.svg" alt="" width="50px">
+                    <h3 class="font-bold uppercase">social events</h3>
+                    <p class="text-muted text-sm leading-relaxed capitalize">parties, hangouts and<span
+                            class="block">social
+                            celebrations.</span></p>
+
+                </div>
+                <div class="overflow-hidden aspect-4/3">
+                    <img src="./public/images/social-events.jpeg" alt="" class="w-full h-full object-cover">
+                </div>
+            </article>
+        </a>
+    </section>
+
 
     <section class="px-8 bg-background mt-3 flex py-2 justify-between w-full">
     <div class="border-t border-muted flex gap-x-10">
@@ -64,4 +247,5 @@
 
     <script src="./src/js/main.js"></script>
 </body>
+
 </html>
