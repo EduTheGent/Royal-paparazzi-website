@@ -17,7 +17,7 @@
 
 <body class="bg-background text-text">
 
-    <header>
+    <header class="relative">
         <nav class="px-6 py-2 lg:text-2xl items-center flex">
             <div class="flex justify-between w-full">
                 <div>
@@ -40,17 +40,19 @@
         </nav>
     </header>
 
-    <section class="relative flex items-center justify-center bg-background h-[50vh]  mb-20 text-3xl px-8">
+    <section
+        class="relative flex items-center justify-center bg-background h-[50vh]  py-8 text-3xl px-8 overflow-hidden box-border min-h-max">
         <div class="lg:grid grid-cols-9 p-10 scale-100 ">
 
             <div class="absolute inset-0 bg-linear-to-r from-background via-surface/40 to-background/90"></div>
 
-            <div class="relative p-3 w-full text-3xl col-span-4">
+            <div class="relative p-3 w-full text-3xl col-span-4 items-center self-center">
                 <p class="text-primary mb-3 text-lg font-semibold uppercase tracking-[0.5em]">Capturing moments.</p>
                 <h1 class=" text-text font-extrabold uppercase leading-none mb-3 l text-5xl whitespace-nowrap">Creating
                     Memories <span class="block text-primary ">that last forever</span></h1>
+                <div class="h-0.5 w-full bg-linear-to-r from-gray-400/60 via-gray-400/30 to-transparent"></div>
 
-                <P class="pt-2 text-muted max-w-[30.9vw] border-t border-muted "><span class="text-primary">Royal
+                <P class="pt-2 text-muted max-w-[30.9vw]"><span class="text-primary">Royal
                         Paparazzi</span> Photography
                     captures
                     life's most
@@ -98,7 +100,7 @@
     </section>
 
 
- <section class="grid grid-cols-6 gap-1 m-3">
+    <section class="grid grid-cols-6 gap-1 m-3 overflow-hidden">
         <a href="./src/pages/gallery.html#weddings">
             <article
                 class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
