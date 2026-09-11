@@ -3,7 +3,7 @@
 
 /* ===== CUSTOM SCROLLBAR ===== */
 
-hhtml {
+html {
   scrollbar-width: thin;
   scrollbar-color: #8f151d #090a0c;
 }
@@ -31,4 +31,12 @@ hhtml {
       #75101a,
       #e32936,
       #8f111a);
+}
+
+.activeTab {
+  @apply bg-primary
+}
+
+.hoverTab {
+  @apply border border-border hover:border-primary hover:text-primary
 }

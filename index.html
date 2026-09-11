@@ -45,16 +45,16 @@
             class="relative flex items-center justify-center bg-background h-[50vh]  py-8 text-3xl px-8 overflow-hidden box-border min-h-max">
             <div class="lg:grid grid-cols-9 p-10 scale-100 ">
 
-                <div class="absolute inset-0 bg-linear-to-r from-background via-surface/40 to-background/90"></div>
+                <div class="absolute inset-0 bg-linear-to-r from-background via-surface/40 to-background/90 z-5"></div>
 
-                <div class="relative w-full text-3xl col-span-4 items-center self-center">
+                <div class="relative w-full text-3xl col-span-4 items-center self-center z-6">
                     <p class="text-primary mb-3 text-lg font-semibold uppercase tracking-[0.5em]">Capturing moments.</p>
-                    <h1 class=" text-text font-extrabold uppercase leading-none mb-3 l text-5xl textspace-nowrap">
+                    <h1 class=" text-text font-extrabold uppercase leading-none mb-3 l md:text-5xl textspace-nowrap">
                         Creating
                         Memories <span class="block text-primary ">that last forever</span></h1>
                     <div class="h-0.5 w-full bg-linear-to-r from-gray-400/60 via-gray-400/30 to-transparent"></div>
 
-                    <P class="pt-2 text-muted max-w-[30.9vw]"><span class="text-primary">Royal
+                    <P class="pt-2 text-muted lg:max-w-[30.9vw]"><span class="text-primary">Royal
                             Paparazzi</span> Photography
                         captures
                         life's most
@@ -62,7 +62,7 @@
                         creativity, passion
                         and a touch of royalty</P>
 
-                    <div class="mt-5 flex gap-4 grow uppercase">
+                    <div class="mt-5 flex justify-between lg:justify-start gap-4 grow uppercase">
                         <button
                             class="flex items-center gap-4 rounded-md bg-primary text-text px-6 py-3 text-xs font-semibold uppercase tracking-wide transition cursor-pointer">
                             book now
@@ -79,9 +79,9 @@
                     </div>
                 </div>
 
-                <div class="col-span-5 max-w-[88%]">
+                <div class="col-span-5 w-full lg:max-w-[88%]">
                     <img src="./public/images/heroCamera.png" alt="A Camera"
-                        class="relative lg:scale-150 translate-y-5 -translate-1 object-cover w-fit">
+                        class="relative lg:scale-150  md:-translate-y-8 sm:translate-x-10 lg:translate-y-5 object-cover w-fit">
                 </div>
 
             </div>
@@ -200,7 +200,8 @@
             <div class="h-0.5 w-full bg-linear-to-r from-transparent-400/60 via-gray-400/30 to-transparent mt-3"></div>
         </section>
 
-        <section aria-label="ROYAL PAPARAZZI SERVICES" class="grid grid-cols-6 gap-1 m-3 overflow-hidden px-10 mt-5">
+        <section aria-label="ROYAL PAPARAZZI SERVICES"
+            class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-1 space-y-8 m-3 overflow-hidden px-10 mt-5">
             <a href="./src/pages/gallery.html#weddings">
                 <article
                     class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
@@ -603,9 +604,8 @@
         <!-- FAB -->
         <button type="button" id="contactFab" aria-label="Open booking and contact options" aria-expanded="false"
             aria-controls="contactPanel"
-            class="fixed right-3 bottom-5 md:bottom-32 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-on-primary shadow-lg transition hover:scale-105 hover:cursor-pointer"
-            onclick="contactPanel.showModal()">
-            <i class="fa-regular fa-paper-plane text-lg" aria-hidden="true"></i>
+            class="fixed right-3 bottom-5 md:bottom-32 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-on-primary shadow-lg transition hover:scale-105 hover:cursor-pointer">
+            <i class="fa-regular fa-paper-plane text-lg " aria-hidden="true"></i>
         </button>
 
 
@@ -629,8 +629,7 @@
 
                     <!-- CLOSE BUTTON -->
                     <button type="button" id="closeContactPanel" aria-label="Close contact options"
-                        class="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-md text-muted transition hover:bg-primary hover:text-on-primary hover:cursor-pointer"
-                        onclick="contactPanel.close()">
+                        class="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-md text-muted transition hover:bg-primary hover:text-on-primary hover:cursor-pointer">
                         <i class="fa-solid fa-xmark" aria-hidden="true"></i>
                     </button>
 
@@ -643,7 +642,7 @@
 
                     <!-- BOOKING TAB -->
                     <button type="button" role="tab" id="bookingTab" aria-controls="bookingPanel" aria-selected="true"
-                        class="flex-1 rounded-md bg-primary px-4 py-3 text-xs font-semibold uppercase tracking-wide text-on-primary transition hover:cursor-pointer">
+                        class="flex-1 rounded-md  px-4 py-3 text-xs font-semibold uppercase tracking-wide text-on-primary transition hover:cursor-pointer activeTab">
                         Book / Inquire
                     </button>
 
@@ -651,7 +650,7 @@
                     <!-- CONTACT TAB -->
                     <button type="button" role="tab" id="contactTab" aria-controls="contactOptions"
                         aria-selected="false"
-                        class="flex-1 rounded-md border border-border px-4 py-3 text-xs font-semibold uppercase tracking-wide text-text transition hover:border-primary hover:text-primary hover:cursor-pointer">
+                        class="flex-1 rounded-md border border-border px-4 py-3 text-xs font-semibold uppercase tracking-wide text-text transition  hover:cursor-pointer hoverTab">
                         Contact
                     </button>
 
@@ -661,13 +660,12 @@
                 <!-- SCROLLABLE CONTENT -->
                 <div class="min-h-0 overflow-y-auto px-6 py-6">
 
-                    <!-- ========================= -->
+
                     <!-- BOOKING / INQUIRY PANEL -->
-                    <!-- ========================= -->
 
                     <section id="bookingPanel" role="tabpanel" aria-labelledby="bookingTab">
 
-                        <form id="bookingForm" class="space-y-5">
+                        <form id="bookingForm" class="space-y-5" method="post" action="/api/students">
 
                             <!-- NAME -->
                             <div>
@@ -762,9 +760,7 @@
                     </section>
 
 
-                    <!-- ========================= -->
                     <!-- CONTACT PANEL -->
-                    <!-- ========================= -->
 
                     <section id="contactOptions" role="tabpanel" aria-labelledby="contactTab" hidden>
 
