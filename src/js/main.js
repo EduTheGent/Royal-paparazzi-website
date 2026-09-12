@@ -1,1 +1,0 @@
-// Royal Paparazzi Website
