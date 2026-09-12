@@ -8,3 +8,11 @@ html {
   scrollbar-color: var(--color-scroll-thumb) var(--color-surface);
 
 }
+
+.activeTab {
+  @apply bg-primary
+}
+
+.hoverTab {
+  @apply border border-border hover:border-primary hover:text-primary
+}
