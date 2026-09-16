@@ -1,11 +1,11 @@
 @import "tailwindcss";
 @import "./themes.css";
 
-/* ===== CUSTOM SCROLLBAR ===== */
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #8f151d #090a0c;
+  scrollbar-color: var(--color-scroll-thumb) var(--color-surface);
+
 }
 
 ::-webkit-scrollbar {
