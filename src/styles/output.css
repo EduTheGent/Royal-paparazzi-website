@@ -54,6 +54,7 @@
     --color-muted: #A7A7AA;
     --color-border: #303136;
     --color-on-primary: #FFFFFF;
+    --color-scroll-thumb: #8f151d;
   }
 }
 @layer base {
@@ -309,6 +310,9 @@
   .mt-1 {
     margin-top: var(--spacing);
   }
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
@@ -323,6 +327,9 @@
   }
   .mb-1\.5 {
     margin-bottom: calc(var(--spacing) * 1.5);
+  }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
   }
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
@@ -366,6 +373,9 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
+  .h-75 {
+    height: calc(var(--spacing) * 75);
+  }
   .h-80 {
     height: calc(var(--spacing) * 80);
   }
@@ -401,6 +411,9 @@
   }
   .w-50 {
     width: calc(var(--spacing) * 50);
+  }
+  .w-150 {
+    width: calc(var(--spacing) * 150);
   }
   .w-\[min\(90dvw\,32rem\)\] {
     width: min(90dvw, 32rem);
@@ -532,6 +545,9 @@
   .overflow-y-auto {
     overflow-y: auto;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -552,7 +568,19 @@
     border-top-style: var(--tw-border-style);
     border-top-width: 1px;
   }
+  .border-t-2 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
+  .border-r-1 {
+    border-right-style: var(--tw-border-style);
+    border-right-width: 1px;
+  }
   .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
+  }
+  .border-b-1 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
@@ -732,6 +760,10 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
@@ -895,6 +927,10 @@
       .hover\:bg-primary\/10:hover {
         background-color: color-mix(in oklab, var(--color-primary) 10%, transparent);
       }
+    }
+    .hover\:text-2xl:hover {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
     .hover\:text-on-primary:hover {
       color: var(--color-on-primary);
@@ -1124,7 +1160,7 @@
 }
 html {
   scrollbar-width: thin;
-  scrollbar-color: #8f151d #090a0c;
+  scrollbar-color: var(--color-scroll-thumb) var(--color-surface);
 }
 ::-webkit-scrollbar {
   width: 7px;
