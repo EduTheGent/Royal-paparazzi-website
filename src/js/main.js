@@ -28,6 +28,9 @@ bookTab.addEventListener('click', () => {
     bookTab.classList.remove('hoverTab')
 
     contactTab.classList.remove('activeTab')
+
+    bookTab.setAttribute("aria-selected", "true");
+    contactTab.setAttribute("aria-selected", "false");
 })
 contactTab.addEventListener('click', () => {
     contactPanel.removeAttribute('hidden')
@@ -38,4 +41,18 @@ contactTab.addEventListener('click', () => {
 
     bookTab.classList.add('hoverTab')
     bookTab.classList.remove('activeTab')
+
+    bookTab.setAttribute("aria-selected", "false");
+    contactTab.setAttribute("aria-selected", "true");
 })
+
+
+modal.addEventListener('click', (event) => {
+    if (event.target == modal) {
+        modal.close()
+    }
+})
+
+contactPanel.addEventListener("close", () => {
+    contactFab.setAttribute("aria-expanded", "false");
+});
