@@ -1,4 +1,4 @@
-const contactFab = document.querySelector('#contactFab');
+const contactFab = document.querySelectorAll('.contactFab');
 const modal = document.querySelector(`#contactPanel`);
 const closeModal = document.querySelector('#closeContactPanel');
 
@@ -10,24 +10,24 @@ const contactTab = document.querySelector('#contactTab');
 
 const contactPanel = document.querySelector('#contactOptions')
 
-contactFab.addEventListener('click', () => {
+contactFab.forEach((event) => event.addEventListener('click', () => {
     modal.showModal();
-    contactFab.setAttribute("aria-expanded", "true");
-});
+    event.setAttribute("aria-expanded", "true");
+}));
 
 closeModal.addEventListener('click', () => {
     modal.close();
-    contactFab.setAttribute("aria-expanded", "false");
+    contactFab.forEach((event) => event.setAttribute("aria-expanded", "false"));
 });
 
 bookTab.addEventListener('click', () => {
     bookPanel.removeAttribute('hidden');
     contactPanel.setAttribute('hidden', '')
 
-    bookTab.classList.add('activeTab')
-    bookTab.classList.remove('hoverTab')
+    bookTab.classList.add('activeBtn')
+    bookTab.classList.remove('hoverBtn')
 
-    contactTab.classList.remove('activeTab')
+    contactTab.classList.remove('activeBtn')
 
     bookTab.setAttribute("aria-selected", "true");
     contactTab.setAttribute("aria-selected", "false");
@@ -36,11 +36,11 @@ contactTab.addEventListener('click', () => {
     contactPanel.removeAttribute('hidden')
     bookPanel.setAttribute('hidden', '');
 
-    contactTab.classList.add('activeTab')
-    contactTab.classList.remove('hoverTab')
+    contactTab.classList.add('activeBtn')
+    contactTab.classList.remove('hoverBtn')
 
-    bookTab.classList.add('hoverTab')
-    bookTab.classList.remove('activeTab')
+    bookTab.classList.add('hoverBtn')
+    bookTab.classList.remove('activeBtn')
 
     bookTab.setAttribute("aria-selected", "false");
     contactTab.setAttribute("aria-selected", "true");
@@ -54,5 +54,5 @@ modal.addEventListener('click', (event) => {
 })
 
 contactPanel.addEventListener("close", () => {
-    contactFab.setAttribute("aria-expanded", "false");
+    contactFab.forEach((event) => event.setAttribute("aria-expanded", "false"));
 });
