@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Royal Paparazzi</title>
+
+    <link rel="shortcut icon" href="../../public/favicon/RPfavicon1.svg" type="image/x-icon">
     <link rel="stylesheet" href="../styles/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -13,25 +15,43 @@
 
 <body class="bg-background">
 
-    <header aria-label="Navigation" class="relative bg-background">
-        <nav class="px-6 py-2 lg:text-2xl items-center flex">
-            <div class="flex justify-between w-full">
-                <div>
+    <header aria-label="Navigation" class="relative border-muted border-b my-2">
+        <nav class="px-6 lg:text-2xl items-center flex justify-between w-full">
+
+            <div>
+                <a href="../../index.html">
                     <img src="../../public/images/logo.png" alt="" class="text-2xl w-50">
-                </div>
-                <div class="space-x-2 text-text flex items-center gap-3">
-                    <a href="../../index.html" class="active:border-b active:text-primary border-primary py-3">HOME</a>
-                    <a href="./about.html" class="active:border-b active:text-primary border-primary py-3" class="active:border-b active:text-primary border-primary py-3">ABOUT</a>
-                    <a href="./services.html" class="active:border-b active:text-primary border-primary py-3">SERVICES</a>
-                    <a href="./gallery.html" class="active:border-b active:text-primary border-primary py-3">GALLERY</a>
-                    <a href="" class="active:border-b active:text-primary border-primary py-3">CONTACT</a>
-                </div>
-                <div class="pt-3">
-                    <button
-                        class=" bg-surface text-primary flex gap-1 border border-primary p-2 text-sm font-semibold items-center">
-                        <i class="fa-regular fa-calendar-days text-primary"></i>BOOK NOW
-                    </button>
-                </div>
+                </a>
+            </div>
+
+
+            <div class="text-text flex items-center text-center justify-between gap-10">
+                <a href="../../index.html"
+                    class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 ">Home</a>
+
+                <a href="."
+                    class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 activePage">
+                    About
+                </a>
+
+                <a href="./service.html"
+                    class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 ">
+                    Services
+                </a>
+
+                <a href="./gallery.html"
+                    class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 ">
+                    Gallery
+                </a>
+
+            </div>
+
+            <div>
+                <button
+                    class=" bg-surface text-primary flex gap-1 border border-primary p-2 text-sm font-semibold items-center hover:cursor-pointer contactFab">
+                    <i class="fa-regular fa-calendar-days text-primary"></i>BOOK NOW
+                </button>
+            </div>
             </div>
         </nav>
     </header>
@@ -120,9 +140,9 @@
 
                 <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
 
-                    <a href="../../index.html" aria-label="Royal Paparazzi Home" class="block w-full overflow-hidden">
+                    <a href="." aria-label="Royal Paparazzi Home" class="block w-full overflow-hidden">
 
-                        <img src="../../public/images/logo.png" alt="Royal Paparazzi Photography"
+                        <img src="./public/images/logo.png" alt="Royal Paparazzi Photography"
                             class="md:-translate-x-5 lg:w-7/12 h-auto">
                     </a>
 
@@ -136,21 +156,21 @@
                         <ul class="flex items-center gap-6 text-xl">
 
                             <li>
-                                <a href="#" aria-label="Instagram"
-                                    class="text-text transition-colors hover:text-primary">
+                                <a href="https://www.instagram.com/royalpaparazzi_studio" target="_blank"
+                                    aria-label="Instagram" class="text-text transition-colors hover:text-primary">
                                     <i class="fa-brands fa-instagram" aria-hidden="true"></i>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" aria-label="Facebook"
+                                <a href="https://www.facebook.com/Royalpaparazz/" target="_blank" aria-label="Facebook"
                                     class="text-text transition-colors hover:text-primary">
                                     <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" aria-label="WhatsApp"
+                                <a href="https://wa.me/2347037849831" target="_blank" aria-label="WhatsApp"
                                     class="text-text transition-colors hover:text-primary">
                                     <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                                 </a>
@@ -195,23 +215,19 @@
                             </li>
 
                             <li>
-                                <a href="../pages/services.html" class="transition-colors hover:text-primary">
+                                <a href="./service.html" class="transition-colors hover:text-primary">
                                     Services
                                 </a>
                             </li>
 
                             <li>
-                                <a href="../pages/gallery.html" class="transition-colors hover:text-primary">
+                                <a href="./gallery.html" class="transition-colors hover:text-primary">
                                     Gallery
                                 </a>
                             </li>
 
 
-                            <li>
-                                <a href="../pages/contact.html" class="transition-colors hover:text-primary">
-                                    Contact
-                                </a>
-                            </li>
+
 
                         </ul>
 
@@ -234,38 +250,40 @@
                         <ul class="space-y-2.5 text-sm text-muted">
 
                             <li>
-                                <a href="../pages/gallery.html#weddings" class="transition-colors hover:text-primary">
+                                <a href="./src/pages/gallery.html#weddings"
+                                    class="transition-colors hover:text-primary">
                                     Wedding Photography
                                 </a>
                             </li>
 
                             <li>
-                                <a href="../pages/gallery.html#birthdays" class="transition-colors hover:text-primary">
+                                <a href="./src/pages/gallery.html#birthdays"
+                                    class="transition-colors hover:text-primary">
                                     Birthday Photography
                                 </a>
                             </li>
 
                             <li>
-                                <a href="../pages/gallery.html#photoshoots"
+                                <a href="./src/pages/gallery.html#photoshoots"
                                     class="transition-colors hover:text-primary">
                                     Professional Photoshoots
                                 </a>
                             </li>
 
                             <li>
-                                <a href="../pages/gallery.html#events" class="transition-colors hover:text-primary">
+                                <a href="./src/pages/gallery.html#events" class="transition-colors hover:text-primary">
                                     Events Photography
                                 </a>
                             </li>
 
                             <li>
-                                <a href="../pages/gallery.html#outdoor" class="transition-colors hover:text-primary">
+                                <a href="./src/pages/gallery.html#outdoor" class="transition-colors hover:text-primary">
                                     Outdoor Photography
                                 </a>
                             </li>
 
                             <li>
-                                <a href="../pages/gallery.html#social-events"
+                                <a href="./src/pages/gallery.html#social-events"
                                     class="transition-colors hover:text-primary">
                                     Social Events
                                 </a>
@@ -366,11 +384,12 @@
 
     </footer>
 
+    <!-- GLOBAL FLOATING CONTACT/BOOKING WIDGET -->
     <div>
         <!-- FAB -->
         <button type="button" id="contactFab" aria-label="Open booking and contact options" aria-expanded="false"
             aria-controls="contactPanel"
-            class="fixed right-3 bottom-5 md:bottom-32 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-on-primary shadow-lg transition hover:scale-105 hover:cursor-pointer">
+            class="fixed right-3 bottom-5 md:bottom-32 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-on-primary shadow-lg transition hover:scale-105 hover:cursor-pointer contactFab">
             <i class="fa-regular fa-paper-plane text-lg " aria-hidden="true"></i>
         </button>
 
@@ -408,7 +427,7 @@
 
                     <!-- BOOKING TAB -->
                     <button type="button" role="tab" id="bookingTab" aria-controls="bookingPanel" aria-selected="true"
-                        class="flex-1 rounded-md  px-4 py-3 text-xs font-semibold uppercase tracking-wide text-on-primary transition hover:cursor-pointer activeTab">
+                        class="flex-1 rounded-md  px-4 py-3 text-xs font-semibold uppercase tracking-wide text-on-primary transition hover:cursor-pointer activeBtn">
                         Book / Inquire
                     </button>
 
@@ -416,7 +435,7 @@
                     <!-- CONTACT TAB -->
                     <button type="button" role="tab" id="contactTab" aria-controls="contactOptions"
                         aria-selected="false"
-                        class="flex-1 rounded-md border border-border px-4 py-3 text-xs font-semibold uppercase tracking-wide text-text transition  hover:cursor-pointer hoverTab">
+                        class="flex-1 rounded-md border border-border px-4 py-3 text-xs font-semibold uppercase tracking-wide text-text transition  hover:cursor-pointer hoverBtn">
                         Contact
                     </button>
 
@@ -533,7 +552,7 @@
                         <div class="space-y-3">
 
                             <!-- WHATSAPP -->
-                            <a href="#" id="whatsappLink"
+                            <a href="https://wa.me/2347037849831" target="_blank" id="whatsappLink"
                                 class="flex items-center gap-4 rounded-md border border-border bg-background p-4 transition hover:border-primary hover:bg-primary/10">
                                 <i class="fa-brands fa-whatsapp text-2xl text-primary" aria-hidden="true"></i>
 
@@ -550,7 +569,7 @@
 
 
                             <!-- INSTAGRAM -->
-                            <a href="#" id="instagramLink"
+                            <a href="https://www.instagram.com/royalpaparazzi_studio" target="_blank" id="instagramLink"
                                 class="flex items-center gap-4 rounded-md border border-border bg-background p-4 transition hover:border-primary hover:bg-primary/10">
                                 <i class="fa-brands fa-instagram text-2xl text-primary" aria-hidden="true"></i>
 
@@ -567,7 +586,7 @@
 
 
                             <!-- FACEBOOK -->
-                            <a href="#" id="facebookLink"
+                            <a href="https://www.facebook.com/Royalpaparazz/" target="_blank" id="facebookLink"
                                 class="flex items-center gap-4 rounded-md border border-border bg-background p-4 transition hover:border-primary hover:bg-primary/10">
                                 <i class="fa-brands fa-facebook text-2xl text-primary" aria-hidden="true"></i>
 
@@ -584,7 +603,7 @@
 
 
                             <!-- EMAIL -->
-                            <a href="mailto:" id="emailLink"
+                            <a href="mailto:royalpaparazzi@gmail.com" id="emailLink"
                                 class="flex items-center gap-4 rounded-md border border-border bg-background p-4 transition hover:border-primary hover:bg-primary/10">
                                 <i class="fa-regular fa-envelope text-2xl text-primary" aria-hidden="true"></i>
 
