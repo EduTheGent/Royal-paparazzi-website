@@ -33,10 +33,14 @@ html {
       #8f111a);
 }
 
-.activeTab {
-  @apply bg-primary
+.activePage {
+  @apply border-b text-primary border-primary py-3 active:scale-100
 }
 
-.hoverTab {
+.activeBtn {
+  @apply bg-primary hover:opacity-75 active:opacity-50
+}
+
+.hoverBtn {
   @apply border border-border hover:border-primary hover:text-primary
 }
