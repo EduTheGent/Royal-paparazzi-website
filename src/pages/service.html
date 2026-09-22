@@ -10,132 +10,280 @@
     <link rel="stylesheet" href="../styles/output.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body class="bg-background">
 
- <header aria-label="Navigation" class="relative">
-        <nav class="px-6 py-2 lg:text-2xl items-center flex">
-            <div class="flex justify-between w-full">
-                <div>
+    <!-- HEADER -->
+    <header aria-label="Navigation" class="relative border-muted border-b my-2">
+
+        <nav class="px-6 lg:text-2xl items-center flex justify-between w-full">
+
+            <!-- LOGO -->
+            <div>
+                <a href="../../index.html">
                     <img src="../../public/images/logo.png" alt="" class="text-2xl w-50">
-                </div>
-                <div class="space-x-2 text-text flex items-center gap-3">
-                    <a href="../../index.html" class="active:border-b active:text-primary border-primary py-3">HOME</a>
-                    <a href="./src/pages/about.html"
-                        class="active:border-b active:text-primary border-primary py-3">ABOUT</a>
-                    <a href="./service.html" class="active:border-b active:text-primary border-primary py-3">SERVICES</a>
-                    <a href="" class="active:border-b active:text-primary border-primary py-3">GALLERY</a>
-                    <a href="" class="active:border-b active:text-primary border-primary py-3">CONTACT</a>
-                </div>
-                <div class="pt-3">
-                    <button
-                        class=" bg-surface text-primary flex gap-1 border border-primary p-2 text-sm font-semibold items-center">
-                        <i class="fa-regular fa-calendar-days text-primary"></i>BOOK NOW
-                    </button>
-                </div>
+                </a>
             </div>
+
+            <!-- NAVIGATION -->
+            <div class="text-text flex items-center text-center justify-between gap-10">
+
+                <a href="../../index.html"
+                    class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70">
+                    Home
+                </a>
+
+                <a href="./about.html"
+                    class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70">
+                    About
+                </a>
+
+                <a href="."
+                    class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 activePage">
+                    Services
+                </a>
+
+                <a href="./gallery.html"
+                    class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70">
+                    Gallery
+                </a>
+
+            </div>
+
+            <!-- BOOK NOW -->
+            <div>
+                <button
+                    class="bg-surface text-primary flex gap-1 border border-primary p-2 text-sm font-semibold items-center hover:cursor-pointer contactFab">
+                    <i class="fa-regular fa-calendar-days text-primary"></i>
+                    BOOK NOW
+                </button>
+            </div>
+
         </nav>
-</header>
-<main>
-    <div class="relative w-full h-[250px] overflow-hidden">
-        <img src="../../public/images/img.png" alt="" class="w-full h-75 absolute inset-0">
-        <div class="absolute pt-10 px-8 left-12-translate-y-1/2">
-            <p class="text-primary text-sm font-semibold tracking-widest">OUR SERVICES</p>
-            <h1 class="text-text text-5xl font-bold">
-            WHAT WE <span class="text-red-500">DO</span>
-            </h1>
-            <p class="text-text mt-4 max-w-3/4">We capture your most important moments with creativity, professionalism and attention to detail</p>
-        </div>
 
-        <div class="flex justify-between px-8 gap-5 md:flex-row">
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="relative w-full h-[250px] overflow-hidden">
+
+            <img src="../../public/images/img.png" alt="" class="w-full h-75 absolute inset-0">
+
+            <div class="absolute pt-10 px-8 left-12-translate-y-1/2">
+
+                <p class="text-primary text-sm font-semibold tracking-widest">
+                    OUR SERVICES
+                </p>
+
+                <h1 class="text-text text-5xl font-bold">
+                    WHAT WE <span class="text-red-500">DO</span>
+                </h1>
+
+                <p class="text-text mt-4 max-w-3/4">
+                    We capture your most important moments with creativity,
+                    professionalism and attention to detail
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FIRST ROW OF SERVICES -->
+        <section class="flex justify-between px-8 gap-5 md:flex-row">
+
+            <!-- WEDDING -->
             <div class="border-l-primary border-b-primary border-t-muted border-r-muted border-1 w-150 rounded">
+
                 <img src="../../public/images/wedding-image.jpeg" alt="" class="w-full h-70">
-                <h2 class="text-text font-bold p-2">WEDDING</h2>
-                <p class="text-muted p-2">Capture every beautiful moment of your special day</p>
 
-            <button id="contactFab" class="text-primary font-bold mt-9 p-2 hover:translate-0.5">BOOK NOW ></button>
-        </div>
+                <h2 class="text-text font-bold p-2">
+                    WEDDING
+                </h2>
 
+                <p class="text-muted p-2">
+                    Capture every beautiful moment of your special day
+                </p>
+
+                <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">
+                    BOOK NOW >
+                </button>
+
+            </div>
+
+
+            <!-- BIRTHDAY -->
             <div class="border-muted border-1 rounded w-150">
+
                 <img src="../../public/images/birthday-image.jpeg" alt="" class="w-full h-70">
-                <h2 class="text-text font-bold p-2">BIRTHDAY</h2>
-                <p class="text-muted p-2">Celebraate your special moments with beautiful memories</p>
 
-            <button class="text-primary font-bold mt-3 p-2 hover:translate-0.5">BOOK NOW ></button>
-        </div>
+                <h2 class="text-text font-bold p-2">
+                    BIRTHDAY
+                </h2>
 
+                <p class="text-muted p-2">
+                    Celebraate your special moments with beautiful memories
+                </p>
+
+                <button class="text-primary font-bold mt-3 p-2 hover:translate-0.5">
+                    BOOK NOW >
+                </button>
+
+            </div>
+
+
+            <!-- PHOTOSHOOT -->
             <div class="border-l-muted border-b-muted border-r-primary border-t-primary border-1 rounded w-150">
+
                 <img src="../../public/images/photoshoot.jpg" alt="" class="w-full h-70">
-                <h2 class="text-text font-bold p-2">PHOTOSHOOT</h2>
-                <p class="text-muted p-2">Professional portraits and creative photography</p>
 
-            <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5" >BOOK NOW ></button>
-        </div>
+                <h2 class="text-text font-bold p-2">
+                    PHOTOSHOOT
+                </h2>
 
-        <div class="flex justify-between px-8 gap-5 md:flex-row mt-5">
+                <p class="text-muted p-2">
+                    Professional portraits and creative photography
+                </p>
+
+                <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">
+                    BOOK NOW >
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECOND ROW OF SERVICES -->
+        <section class="flex justify-between px-8 gap-5 md:flex-row mt-5">
+
+            <!-- EVENTS -->
             <div class="border-l-primary border-b-primary border-t-muted border-r-muted border-1 w-150 rounded">
+
                 <img src="../../public/images/events.jpeg" alt="" class="w-full h-70">
-                <h2 class="text-text font-bold p-2">EVENTS</h2>
-                <p class="text-muted p-2">From small gatherings to grand celebrations</p>
 
-            <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">BOOK NOW ></button>
-        </div>
+                <h2 class="text-text font-bold p-2">
+                    EVENTS
+                </h2>
 
+                <p class="text-muted p-2">
+                    From small gatherings to grand celebrations
+                </p>
+
+                <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">
+                    BOOK NOW >
+                </button>
+
+            </div>
+
+
+            <!-- OUTDOOR -->
             <div class="border-muted border-b-primary border-1 rounded w-150">
+
                 <img src="../../public/images/nature.png" alt="" class="w-full h-70">
-                <h2 class="text-text font-bold p-2">OUTDOOR</h2>
-                <p class="text-muted p-2">Naturee, adventure and breathtaking landscapes</p>
 
-            <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">BOOK NOW ></button>
-        </div>
+                <h2 class="text-text font-bold p-2">
+                    OUTDOOR
+                </h2>
 
+                <p class="text-muted p-2">
+                    Naturee, adventure and breathtaking landscapes
+                </p>
+
+                <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">
+                    BOOK NOW >
+                </button>
+
+            </div>
+
+
+            <!-- SOCIAL EVENTS -->
             <div class="border-l-muted border-b-muted border-r-primary border-t-primary border-1 rounded w-150">
+
                 <img src="../../public/images/social-events.jpeg" alt="" class="w-full h-70">
-                <h2 class="text-text font-bold p-2">SOCIAL EVENTS</h2>
-                <p class="text-muted p-2">Parties, hangouts and social celebrations</p>
 
-            <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">BOOK NOW ></button>
-        </div>
+                <h2 class="text-text font-bold p-2">
+                    SOCIAL EVENTS
+                </h2>
 
-        <div class="px-8">
+                <p class="text-muted p-2">
+                    Parties, hangouts and social celebrations
+                </p>
+
+                <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">
+                    BOOK NOW >
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- READY TO BOOK -->
+        <section class="px-8">
+
             <div
-                class="border-1 border-t-primary border-b-primary border-r-muted rounded border-l-muted flex justify-between  mb-5 mt-5">
+                class="border-1 border-t-primary border-b-primary border-r-muted rounded border-l-muted flex justify-between mb-5 mt-5">
+
                 <div class="flex gap-5 items-center px-8">
-                    <i class="fa-regular fa-camera text-primary text-6xl "></i>
+
+                    <i class="fa-regular fa-camera text-primary text-6xl"></i>
+
                     <div>
-                        <h2 class="text-text font-bold">READY TO BOOK?</h2>
-                        <p class="text-text">Let's turn your memories into timeless memories.</p>
+
+                        <h2 class="text-text font-bold">
+                            READY TO BOOK?
+                        </h2>
+
+                        <p class="text-text">
+                            Let's turn your memories into timeless memories.
+                        </p>
+
                     </div>
+
                 </div>
+
 
                 <div class="relative">
+
                     <img src="../../public/images/camera.png" alt="" class="w-80 h-40 object-cover">
+
                     <div class="absolute left-5 top-1/2 -translate-y-1/2">
-                        <button class="text-text font-bold bg-primary mt-8 rounded p-2 hover:translate-0.5">BOOK NOW
-                            ></button>
+
+                        <button class="text-text font-bold bg-primary mt-8 rounded p-2 hover:translate-0.5">
+                            BOOK NOW >
+                        </button>
+
                     </div>
+
                 </div>
+
             </div>
-        </div>
+
+        </section>
+
     </main>
 
+
+    <!-- FOOTER -->
     <footer class="bg-background text-text pr-5 pl-1.5 border-t border-muted">
 
         <div class="max-w-7xl mx-auto px-6 sm:px-10 md:px-12 lg:px-0 py-10 lg:py-12">
 
-
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.4fr_0.8fr_1fr_1fr] gap-6 lg:gap-0">
 
                 <!-- BRAND -->
-
                 <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
 
                     <a href="." aria-label="Royal Paparazzi Home" class="block w-full overflow-hidden">
 
                         <img src="./public/images/logo.png" alt="Royal Paparazzi Photography"
                             class="md:-translate-x-5 lg:w-7/12 h-auto">
+
                     </a>
 
                     <p class="max-w-xs text-sm leading-6 text-muted">
@@ -143,8 +291,10 @@
                         with creativity, passion and professionalism.
                     </p>
 
-                    <!-- Social Links -->
+
+                    <!-- SOCIAL LINKS -->
                     <nav aria-label="Social media" class="mt-7">
+
                         <ul class="flex items-center gap-6 text-xl">
 
                             <li>
@@ -175,14 +325,13 @@
                             </li>
 
                         </ul>
+
                     </nav>
 
                 </div>
 
 
-
                 <!-- QUICK LINKS -->
-
                 <div
                     class="text-center lg:text-left self-center lg:border-l-8 lg:border-primary/70 rounded-2xl lg:pl-6 lg:ml-4">
 
@@ -218,15 +367,11 @@
                                 </a>
                             </li>
 
-
-
-
                         </ul>
 
                     </nav>
 
                 </div>
-
 
 
                 <!-- SERVICES -->
@@ -271,7 +416,6 @@
                                 </a>
                             </li>
 
-
                         </ul>
 
                     </nav>
@@ -291,7 +435,7 @@
 
                         <ul class="space-y-5 text-sm text-muted w-1/2 lg:w-full m-auto">
 
-                            <!-- Location -->
+                            <!-- LOCATION -->
                             <li class="flex items-start gap-3 justify-[inherit]">
 
                                 <span class="mt-0.5 w-4 shrink-0 text-primary">
@@ -305,7 +449,7 @@
                             </li>
 
 
-                            <!-- Phone -->
+                            <!-- PHONE -->
                             <li class="flex items-start gap-3">
 
                                 <span class="mt-0.5 w-4 shrink-0 text-primary">
@@ -319,7 +463,7 @@
                             </li>
 
 
-                            <!-- Email -->
+                            <!-- EMAIL -->
                             <li class="flex items-start gap-3">
 
                                 <span class="mt-0.5 w-4 shrink-0 text-primary">
@@ -344,18 +488,20 @@
         </div>
 
 
-
+        <!-- FOOTER DIVIDER -->
         <div class="h-0.5 w-full bg-linear-to-r from-primary/30 via-primary/70 to-primary"></div>
 
 
+        <!-- COPYRIGHT -->
         <div class="max-w-7xl mx-auto py-4">
 
-            <div class="flex flex-col gap-5 md:flex-row sm:items-center sm:justify-between text-center ">
+            <div class="flex flex-col gap-5 md:flex-row sm:items-center sm:justify-between text-center">
 
                 <p class="text-xs text-muted">
                     &copy; 2026 Royal Paparazzi Photography.
                     All Rights Reserved.
                 </p>
+
 
                 <p aria-label="Royal Paparazzi tagline" class="text-xs italic text-primary">
                     Royal People&nbsp; · &nbsp;Real Moments&nbsp; · &nbsp;Royal Quality
