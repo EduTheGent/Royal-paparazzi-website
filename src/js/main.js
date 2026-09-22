@@ -1,4 +1,4 @@
-const contactFab = document.querySelector('#contactFab');
+const contactFab = document.querySelectorAll('#contactFab');
 const modal = document.querySelector(`#contactPanel`);
 const closeModal = document.querySelector('#closeContactPanel');
 
