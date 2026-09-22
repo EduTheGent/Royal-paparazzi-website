@@ -5,6 +5,7 @@ const galleryEmpty = document.getElementById("galleryEmpty");
 const loadMoreBtn = document.getElementById("loadMoreBtn");
 const loadMoreContainer = document.getElementById("loadMoreContainer");
 const galleryTabs = document.querySelectorAll(".gallery-tab");
+const category = window.location.hash.slice(1);
 
 
 // Gallery images
@@ -67,10 +68,18 @@ const galleryImages = [
 
 
 // Gallery state
-let currentCategory = "all";
+let currentCategory;
+if (category) {
+    currentCategory = category
+    setActiveTab(currentCategory);
+} else {
+    currentCategory = "all";
+}
 let visibleImages = 6;
 
 const imagesPerLoad = 6;
+
+
 
 
 // Display Gallery
@@ -147,6 +156,37 @@ function displayGallery() {
     }
 }
 
+// Display Active Tab
+function setActiveTab(category) {
+    galleryTabs.forEach(button => {
+        const isActive = button.dataset.category === category;
+
+        button.setAttribute("aria-selected", isActive);
+
+        if (isActive) {
+            button.classList.add(
+                "bg-primary",
+                "text-text"
+            );
+
+            button.classList.remove(
+                "border",
+                "border-primary"
+            );
+        } else {
+            button.classList.remove(
+                "bg-primary",
+
+            );
+
+            button.classList.add(
+                "border",
+                "border-primary"
+            );
+        }
+    });
+}
+
 
 // Category Tabs
 
@@ -156,46 +196,11 @@ galleryTabs.forEach(tab => {
 
         currentCategory = tab.dataset.category;
 
+        window.location.hash = currentCategory
+
         visibleImages = imagesPerLoad;
 
-
-        // Update tab states
-        galleryTabs.forEach(button => {
-
-            const isActive =
-                button === tab;
-
-            button.setAttribute(
-                "aria-selected",
-                isActive
-            );
-
-            if (isActive) {
-
-                button.classList.add(
-                    "bg-primary",
-                    "text-text"
-                );
-
-                button.classList.remove(
-                    "border",
-                    "border-primary"
-                );
-
-            } else {
-
-                button.classList.remove(
-                    "bg-primary",
-
-                );
-
-                button.classList.add(
-                    "border",
-                    "border-primary"
-                );
-            }
-        });
-
+        setActiveTab(currentCategory);
 
         displayGallery();
     });
