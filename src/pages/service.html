@@ -15,58 +15,38 @@
 
 <body class="bg-background">
 
-    <header aria-label="Navigation" class="relative border-muted border-b my-2">
-        <nav class="px-6 lg:text-2xl items-center flex justify-between w-full">
-
-            <div>
-                <a href="../../index.html">
+ <header aria-label="Navigation" class="relative">
+        <nav class="px-6 py-2 lg:text-2xl items-center flex">
+            <div class="flex justify-between w-full">
+                <div>
                     <img src="../../public/images/logo.png" alt="" class="text-2xl w-50">
-                </a>
-            </div>
-
-
-            <div class="text-text flex items-center text-center justify-between gap-10">
-                <a href="../../index.html"
-                    class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 ">Home</a>
-
-                <a href="./about.html"
-                    class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 ">
-                    About
-                </a>
-
-                <a href="."
-                    class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 activePage">
-                    Services
-                </a>
-
-                <a href="./gallery.html"
-                    class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 ">
-                    Gallery
-                </a>
-
-            </div>
-
-            <div>
-                <button
-                    class=" bg-surface text-primary flex gap-1 border border-primary p-2 text-sm font-semibold items-center hover:cursor-pointer contactFab">
-                    <i class="fa-regular fa-calendar-days text-primary"></i>BOOK NOW
-                </button>
-            </div>
+                </div>
+                <div class="space-x-2 text-text flex items-center gap-3">
+                    <a href="../../index.html" class="active:border-b active:text-primary border-primary py-3">HOME</a>
+                    <a href="./src/pages/about.html"
+                        class="active:border-b active:text-primary border-primary py-3">ABOUT</a>
+                    <a href="./service.html" class="active:border-b active:text-primary border-primary py-3">SERVICES</a>
+                    <a href="" class="active:border-b active:text-primary border-primary py-3">GALLERY</a>
+                    <a href="" class="active:border-b active:text-primary border-primary py-3">CONTACT</a>
+                </div>
+                <div class="pt-3">
+                    <button
+                        class=" bg-surface text-primary flex gap-1 border border-primary p-2 text-sm font-semibold items-center">
+                        <i class="fa-regular fa-calendar-days text-primary"></i>BOOK NOW
+                    </button>
+                </div>
             </div>
         </nav>
-    </header>
-
-    <main>
-        <div class="relative w-full h-[250px] overflow-hidden">
-            <img src="../../public/images/img.png" alt="" class="w-full h-75 absolute inset-0">
-            <div class="absolute pt-10 px-8 left-12-translate-y-1/2">
-                <p class="text-primary text-sm font-semibold tracking-widest">OUR SERVICES</p>
-                <h1 class="text-text text-5xl font-bold">
-                    WHAT WE <span class="text-red-500">DO</span>
-                </h1>
-                <p class="text-text mt-4">We capture your most important moments with creativity, professionalism and
-                    attention to detail</p>
-            </div>
+</header>
+<main>
+    <div class="relative w-full h-[250px] overflow-hidden">
+        <img src="../../public/images/img.png" alt="" class="w-full h-75 absolute inset-0">
+        <div class="absolute pt-10 px-8 left-12-translate-y-1/2">
+            <p class="text-primary text-sm font-semibold tracking-widest">OUR SERVICES</p>
+            <h1 class="text-text text-5xl font-bold">
+            WHAT WE <span class="text-red-500">DO</span>
+            </h1>
+            <p class="text-text mt-4 max-w-3/4">We capture your most important moments with creativity, professionalism and attention to detail</p>
         </div>
 
         <div class="flex justify-between px-8 gap-5 md:flex-row">
@@ -75,24 +55,23 @@
                 <h2 class="text-text font-bold p-2">WEDDING</h2>
                 <p class="text-muted p-2">Capture every beautiful moment of your special day</p>
 
-                <button class="text-primary font-bold mt-9 p-2">BOOK NOW ></button>
-            </div>
+            <button id="contactFab" class="text-primary font-bold mt-9 p-2 hover:translate-0.5">BOOK NOW ></button>
+        </div>
 
             <div class="border-muted border-1 rounded w-150">
                 <img src="../../public/images/birthday-image.jpeg" alt="" class="w-full h-70">
                 <h2 class="text-text font-bold p-2">BIRTHDAY</h2>
                 <p class="text-muted p-2">Celebraate your special moments with beautiful memories</p>
 
-                <button class="text-primary font-bold mt-3 p-2">BOOK NOW ></button>
-            </div>
+            <button class="text-primary font-bold mt-3 p-2 hover:translate-0.5">BOOK NOW ></button>
+        </div>
 
             <div class="border-l-muted border-b-muted border-r-primary border-t-primary border-1 rounded w-150">
                 <img src="../../public/images/photoshoot.jpg" alt="" class="w-full h-70">
                 <h2 class="text-text font-bold p-2">PHOTOSHOOT</h2>
                 <p class="text-muted p-2">Professional portraits and creative photography</p>
 
-                <button class="text-primary font-bold mt-9 p-2">BOOK NOW ></button>
-            </div>
+            <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5" >BOOK NOW ></button>
         </div>
 
         <div class="flex justify-between px-8 gap-5 md:flex-row mt-5">
@@ -101,24 +80,23 @@
                 <h2 class="text-text font-bold p-2">EVENTS</h2>
                 <p class="text-muted p-2">From small gatherings to grand celebrations</p>
 
-                <button class="text-primary font-bold mt-9 p-2">BOOK NOW ></button>
-            </div>
+            <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">BOOK NOW ></button>
+        </div>
 
             <div class="border-muted border-b-primary border-1 rounded w-150">
                 <img src="../../public/images/nature.png" alt="" class="w-full h-70">
                 <h2 class="text-text font-bold p-2">OUTDOOR</h2>
                 <p class="text-muted p-2">Naturee, adventure and breathtaking landscapes</p>
 
-                <button class="text-primary font-bold mt-9 p-2">BOOK NOW ></button>
-            </div>
+            <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">BOOK NOW ></button>
+        </div>
 
             <div class="border-l-muted border-b-muted border-r-primary border-t-primary border-1 rounded w-150">
                 <img src="../../public/images/social-events.jpeg" alt="" class="w-full h-70">
                 <h2 class="text-text font-bold p-2">SOCIAL EVENTS</h2>
                 <p class="text-muted p-2">Parties, hangouts and social celebrations</p>
 
-                <button class="text-primary font-bold mt-9 p-2">BOOK NOW ></button>
-            </div>
+            <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">BOOK NOW ></button>
         </div>
 
         <div class="px-8">
