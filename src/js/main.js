@@ -1,4 +1,4 @@
-const contactFab = document.querySelectorAll('#contactFab');
+const contactFab = document.querySelectorAll('.contactFab');
 const modal = document.querySelector(`#contactPanel`);
 const closeModal = document.querySelector('#closeContactPanel');
 
@@ -56,3 +56,29 @@ modal.addEventListener('click', (event) => {
 contactPanel.addEventListener("close", () => {
     contactFab.forEach((event) => event.setAttribute("aria-expanded", "false"));
 });
+
+
+
+
+// Mobile Menu
+const mobileNavContainer = document.getElementById("mobileNavContainer");
+const mobileMenu = document.getElementById("mobileMenu");
+const mobileNav = document.getElementById("mobileNav");
+const [first, second, third] =
+  document.querySelectorAll("#mobileMenu span");
+
+
+mobileMenu.addEventListener('click', () => {
+    mobileNavContainer.classList.toggle('overflow-hidden')
+    mobileNav.classList.toggle('-right-100')
+    mobileNav.classList.toggle('right-0.5')
+
+    first.classList.toggle("rotate-45");
+    first.classList.toggle("translate-y-4");
+
+    second.classList.toggle("opacity-0");
+
+    third.classList.toggle("-rotate-45");
+    third.classList.toggle("-translate-y-4");
+
+})

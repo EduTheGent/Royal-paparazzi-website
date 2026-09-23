@@ -19,7 +19,7 @@
 <body class="bg-background text-text">
 
     <header aria-label="Navigation" class="relative border-muted border-b my-2">
-        <nav class="px-6 lg:text-2xl items-center flex justify-between w-full">
+        <nav class="px-6 lg:text-2xl items-center justify-between w-full hidden md:flex">
 
             <div>
                 <a href=".">
@@ -54,97 +54,321 @@
                     <i class="fa-regular fa-calendar-days text-primary"></i>BOOK NOW
                 </button>
             </div>
+        </nav>
+
+        <nav id="mobileNavContainer" aria-label="Mobile Navigation" aria-expanded="false"
+            class="flex md:hidden justify-between p-4 overflow-hidden">
+
+            <div>
+                <a href=".">
+                    <img src="./public/images/logo.png" alt="" class="text-2xl w-50">
+                </a>
             </div>
+
+            <div aria-label="Harmburger Menu" id="mobileMenu"
+                class="relative space-y-3 flex flex-col justify-center hover:cursor-pointer">
+
+                <span class="h-1 w-15 bg-muted transition-all duration-300 ease-in-out"></span>
+                <span class="h-1 w-15 bg-muted transition-all duration-300 ease-in-out"></span>
+                <span class="h-1 w-15 bg-muted transition-all duration-300 ease-in-out"></span>
+
+
+                <nav id="mobileNav"
+                    class="absolute top-20 -right-100 bg-surface z-30 ease-in-out transition-all duration-1000 rounded-md">
+                    <div
+                        class="text-text flex flex-col items-center text-center justify-between gap-10 w-[70dvw] text-4xl rounded-lg">
+                        <a href="." class="py-3 hover:opacity-85 active:opacity-50 activePage w-full">Home</a>
+
+                        <a href="./src/pages/about.html"
+                            class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 w-full">
+                            About
+                        </a>
+
+                        <a href="./src/pages/service.html"
+                            class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 w-full">
+                            Services
+                        </a>
+
+                        <a href="./src/pages/gallery.html"
+                            class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 w-full">
+                            Gallery
+                        </a>
+
+                    </div>
+
+                    <div class="px-3 py-2 border-t border-muted mt-2">
+                        <button
+                            class=" bg-surface text-primary flex gap-1 border border-primary p-2 text-3xl font-semibold items-center hover:cursor-pointer contactFab w-full justify-center">
+                            <i class="fa-regular fa-calendar-days text-primary"></i>BOOK NOW
+                        </button>
+                    </div>
+                </nav>
+            </div>
+
+
         </nav>
     </header>
 
     <main>
         <section aria-label="hero"
-            class="relative flex items-center justify-center bg-background h-[50vh]  py-8 text-3xl px-8 overflow-hidden box-border min-h-max">
-            <div class="lg:grid grid-cols-9 p-10 scale-100 ">
+            class="relative flex items-center justify-center bg-background text-3xl overflow-hidden box-border h-auto min-h-max lg:h-[50vh]">
+            <!-- Main Hero Container -->
+            <div class="relative w-full lg:grid grid-cols-9 p-10 scale-100">
 
-                <div class="absolute inset-0 bg-linear-to-r from-background via-surface/40 to-background/90 z-5"></div>
+                <!-- Background Overlay -->
+                <div class="absolute inset-0
+                   bg-linear-to-b
+                   from-background
+                   via-background/90
+                   to-background/30
+                   z-5
+                   lg:bg-linear-to-r
+                   lg:from-background
+                   lg:via-surface/40
+                   lg:to-background/90"></div>
 
-                <div class="relative w-full text-3xl col-span-4 items-center self-center z-6">
-                    <p class="text-primary mb-3 text-lg font-semibold uppercase tracking-[0.5em]">Capturing moments.</p>
-                    <h1 class=" text-text font-extrabold uppercase leading-none mb-3 l md:text-5xl textspace-nowrap">
+
+                <!-- TEXT CONTENT -->
+                <div class="relative w-full text-3xl
+                   col-span-4
+                   items-center self-center
+                   z-6">
+
+                    <!-- Small Heading -->
+                    <p class="text-primary mb-3
+                       text-sm sm:text-lg
+                       font-semibold uppercase
+                       tracking-[0.5em]">
+                        Capturing moments.
+                    </p>
+
+
+                    <!-- Main Heading -->
+                    <h1 class="text-text
+                       font-extrabold
+                       uppercase
+                       leading-none
+                       mb-3
+                       text-4xl
+                       sm:text-5xl
+                       md:text-5xl">
                         Creating
-                        Memories <span class="block text-primary ">that last forever</span></h1>
-                    <div class="h-0.5 w-full bg-linear-to-r from-gray-400/60 via-gray-400/30 to-transparent"></div>
+                        Memories
 
-                    <P class="pt-2 text-muted lg:max-w-[30.9vw]"><span class="text-primary">Royal
-                            Paparazzi</span> Photography
-                        captures
-                        life's most
-                        beautiful moments with
-                        creativity, passion
-                        and a touch of royalty</P>
+                        <span class="block text-primary">
+                            that last forever
+                        </span>
+                    </h1>
 
-                    <div class="mt-5 flex justify-between lg:justify-start gap-4 grow uppercase">
-                        <button
-                            class="flex items-center gap-4 rounded-md bg-primary text-text px-6 py-3 text-xs font-semibold uppercase tracking-wide transition cursor-pointer contactFab activeBtn">
-                            book now
+
+                    <!-- Divider -->
+                    <div class="h-0.5 w-full
+                       bg-linear-to-r
+                       from-gray-400/60
+                       via-gray-400/30
+                       to-transparent"></div>
+
+
+                    <!-- Description -->
+                    <p class="pt-2
+                       text-muted
+                       text-base
+                       leading-relaxed
+                       sm:text-lg
+                       md:max-w-[50dvw]
+                       lg:max-w-[30.9vw]">
+                        <span class="text-primary">
+                            Royal Paparazzi
+                        </span>
+                        Photography captures life's most beautiful
+                        moments with creativity, passion and a touch
+                        of royalty
+                    </p>
+
+
+                    <!-- Buttons -->
+                    <div class="mt-10
+                       flex
+                       justify-between
+                       md:mt-5
+                       md:justify-start
+                       gap-4
+                       grow
+                       uppercase
+                       flex-wrap">
+
+                        <!-- Book Now -->
+                        <button class="flex items-center
+                           gap-4
+                           rounded-md
+                           bg-primary
+                           text-text
+                           px-6 py-3
+                           text-xs
+                           font-semibold
+                           uppercase
+                           tracking-wide
+                           transition
+                           cursor-pointer
+                           contactFab
+                           activeBtn">
+                            Book Now
 
                             <span>↗</span>
                         </button>
 
-                        <a href="./src/pages/gallery.html"
-                            class="flex items-center gap-1.5 rounded-md border border-text text-text px-6 py-3 text-xs font-semibold uppercase tracking-wide transition hover:border-primary hover:text-primary hover:cursor-pointer">
+
+                        <!-- Gallery -->
+                        <a href="./src/pages/gallery.html" class="flex items-center
+                           gap-1.5
+                           rounded-md
+                           border border-text
+                           text-text
+                           px-6 py-3
+                           text-xs
+                           font-semibold
+                           uppercase
+                           tracking-wide
+                           transition
+                           hover:border-primary
+                           hover:text-primary
+                           hover:cursor-pointer">
                             View Gallery
 
                             <span>▦</span>
                         </a>
-                        </a>
+
                     </div>
+
+
+                    <!-- SOCIAL ICONS
+                 Mobile: below buttons
+                 Desktop: moved to right rail using absolute positioning
+            -->
+                    <div class="relative
+                       mt-10
+                       flex
+                       flex-row
+                       items-center
+                       justify-center
+                       gap-5
+                       z-10
+
+                       lg:absolute
+                       lg:top-1/6
+                       lg:left-[calc(100vw-80px)]
+                       lg:mt-0
+                       lg:flex-col
+                       lg:justify-center">
+
+                        <!-- Top Line -->
+                        <div class="
+                           block
+                           h-px
+                           w-20
+                           lg:w-px
+                           lg:h-8
+                           bg-muted"></div>
+
+
+                        <!-- Social Links -->
+                        <ul class="flex
+                           flex-row
+                           gap-5
+                           text-2xl
+
+                           lg:flex-col
+                           lg:space-y-5
+                           lg:gap-0">
+
+                            <!-- Instagram -->
+                            <li>
+                                <a href="https://www.instagram.com/royalpaparazzi_studio/" target="_blank"
+                                    aria-label="Instagram" class="text-text
+                                   transition-colors
+                                   hover:text-primary">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+
+                            <!-- Facebook -->
+                            <li>
+                                <a href="https://www.facebook.com/Royalpaparazz/" target="_blank" aria-label="Facebook"
+                                    class="text-text
+                                   transition-colors
+                                   hover:text-primary">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+
+                            <!-- WhatsApp -->
+                            <li>
+                                <a href="https://wa.me/2347037849831" target="_blank" aria-label="WhatsApp" class="text-text
+                                   transition-colors
+                                   hover:text-primary">
+                                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+                        <!-- Bottom Line -->
+                        <div class="block
+                           h-px
+                           w-20
+                           lg:w-px
+                           lg:h-8
+                           bg-muted"></div>
+
+                    </div>
+
                 </div>
 
-                <div class="col-span-5 w-full lg:max-w-[88%]">
-                    <img src="./public/images/heroCamera.png" alt="A Camera"
-                        class="relative lg:scale-150  md:-translate-y-8 sm:translate-x-10 lg:translate-y-5 object-cover w-fit">
+
+                <!-- CAMERA
+             Mobile: absolute background visual
+             Desktop: returns to grid
+        -->
+                <div class="absolute
+                   -bottom-5
+                   right-[-20%]
+                   z-1
+                   w-[90%]
+
+                   lg:relative
+                   lg:bottom-auto
+                   lg:right-auto
+                   
+                   lg:col-span-5
+                   lg:w-full
+                   lg:max-w-[88%]">
+                    <img src="./public/images/heroCamera.png" alt="A Camera" class="relative
+                       object-cover
+                       w-full
+
+                       lg:scale-150
+                       md:-translate-y-8
+                       sm:translate-x-10
+                       lg:translate-y-5">
                 </div>
 
             </div>
 
-            <div
-                class="absolute top-1/6 right-5 flex flex-col justify-center items-center z-10 gap-5 text-sm font-bold">
-                <div class="w-px h-8 bg-muted"></div>
-                <ul class="space-y-5 text-2xl">
-
-                    <li>
-                        <a href="https://www.instagram.com/royalpaparazzi_studio/" target="_blank"
-                            aria-label="Instagram" class="text-text transition-colors hover:text-primary">
-                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.facebook.com/Royalpaparazz/" target="_blank" aria-label="Facebook"
-                            class="text-text transition-colors hover:text-primary">
-                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://wa.me/2347037849831" target="_blank" aria-label="WhatsApp"
-                            class="text-text transition-colors hover:text-primary">
-                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                        </a>
-                    </li>
-
-                </ul>
-                <div class="w-px h-8 bg-muted"></div>
-            </div>
         </section>
 
 
-        <section aria-labelledby="trust-heading" class="sm:px-6 lg:px-8 min-h-max">
+
+        <section aria-labelledby="trust-heading" class="p-8 min-h-max">
             <div class="h-0.5 w-full bg-linear-to-r from-transparent-400/60 via-gray-400/30 to-transparent mt-3"></div>
             <h2 id="trust-heading" class="sr-only">
                 Why choose Royal Paparazzi
             </h2>
 
             <ul
-                class="mx-auto grid max-w-7xl grid-cols-2 items-stretch gap-y-3 md:grid-cols-5 lg:grid-cols-6 md:gap-y-0">
+                class="mx-auto grid max-w-7xl grid-cols-2 items-stretch p-4 gap-5 md:grid-cols-5 lg:grid-cols-6 md:gap-y-0">
 
 
 
@@ -178,7 +402,7 @@
 
 
                 <li
-                    class="col-span-2 flex items-center justify-center border border-primary px-4 py-3 text-center md:col-span-1 lg:col-span-2 lg:mx-20">
+                    class="col-span-2 flex items-center justify-center border border-primary px-4 py-3 text-center md:col-span-1 lg:col-span-2 lg:mx-20 w-2/4 sm:w-auto m-auto">
                     <div>
                         <p class="text-2xl font-bold leading-none text-primary sm:text-3xl">
                             1000+
@@ -226,7 +450,7 @@
         </section>
 
         <section aria-label="ROYAL PAPARAZZI SERVICES"
-            class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 gap-1 space-y-8 m-3 overflow-hidden px-10 mt-5">
+            class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 space-y-5 sm:gap-3 sm:space-y-8 m-3 overflow-hidden px-10">
             <a href="./src/pages/gallery.html#weddings">
                 <article
                     class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
@@ -277,7 +501,7 @@
                 </article>
             </a>
 
-            <a href="./src/pages/gallery.html#events">
+            <a href="./src/pages/gallery.html#events" class="hidden sm:block">
                 <article
                     class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
                     <div class="flex flex-col text-center items-center p-3">
@@ -293,7 +517,7 @@
                 </article>
             </a>
 
-            <a href="./src/pages/gallery.html#nature">
+            <a href="./src/pages/gallery.html#nature" class="hidden sm:block">
                 <article
                     class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
                     <div class="flex flex-col text-center items-center p-3">
@@ -309,7 +533,7 @@
                 </article>
             </a>
 
-            <a href="./src/pages/gallery.html#socail-events">
+            <a href="./src/pages/gallery.html#socail-events" class="hidden sm:block">
                 <article
                     class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
                     <div class="flex flex-col text-center items-center p-3">
@@ -324,6 +548,13 @@
                         <img src="./public/images/social-events.jpeg" alt="" class="w-full h-full object-cover">
                     </div>
                 </article>
+            </a>
+
+            <a href="./src/pages/gallery.html" id="loadMoreContainer" class="mt-10 flex justify-center sm:hidden">
+                <button type="button" id="loadMoreBtn"
+                    class="rounded-md border border-primary px-8 py-3 text-xs font-semibold uppercase tracking-[0.15em] text-text transition hover:bg-primary hover:text-text hover:cursor-pointer">
+                    View More
+                </button>
             </a>
         </section>
 
@@ -351,8 +582,9 @@
                         More Than Just Photography
                     </h2>
 
-                    <p class="text-text/80 text-base md:text-lg mb-5">
-                        Short introduction about Royal Paparazzi...
+                    <p class="text-text/70 text-base md:text-lg mb-5">
+                        At Royal Paparazzi Photography, we believe every moment deserves to be remembered.
+                        We specialize in...
                     </p>
 
                     <a href="./src/pages/about.html" class="inline-block text-primary font-semibold hover:underline">

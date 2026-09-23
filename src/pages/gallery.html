@@ -16,7 +16,7 @@
 <body class="bg-background">
 
     <header aria-label="Navigation" class="relative border-muted border-b my-2">
-        <nav class="px-6 lg:text-2xl items-center flex justify-between w-full">
+        <nav class="px-6 lg:text-2xl items-center justify-between w-full hidden md:flex">
 
             <div>
                 <a href="../../index.html">
@@ -30,7 +30,7 @@
                     class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 ">Home</a>
 
                 <a href="./about.html"
-                    class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 ">
+                    class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70">
                     About
                 </a>
 
@@ -52,115 +52,379 @@
                     <i class="fa-regular fa-calendar-days text-primary"></i>BOOK NOW
                 </button>
             </div>
+        </nav>
+
+        <nav id="mobileNavContainer" aria-label="Mobile Navigation" aria-expanded="false"
+            class="flex md:hidden justify-between p-4 overflow-hidden">
+
+            <div>
+                <a href="../../index.html">
+                    <img src="../../public/images/logo.png" alt="" class="text-2xl w-50">
+                </a>
             </div>
+
+            <div aria-label="Harmburger Menu" id="mobileMenu"
+                class="relative space-y-3 flex flex-col justify-center hover:cursor-pointer">
+
+                <span class="h-1 w-15 bg-muted transition-all duration-300 ease-in-out"></span>
+                <span class="h-1 w-15 bg-muted transition-all duration-300 ease-in-out"></span>
+                <span class="h-1 w-15 bg-muted transition-all duration-300 ease-in-out"></span>
+
+
+                <nav id="mobileNav"
+                    class="absolute top-20 -right-100 bg-surface z-30 ease-in-out transition-all duration-1000 rounded-md">
+
+
+
+                    <div
+                        class="text-text flex flex-col items-center text-center justify-between gap-10 w-[70dvw] text-4xl rounded-lg">
+                        <a href="../../index.html"
+                            class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 w-full">Home</a>
+
+                        <a href="./about.html"
+                            class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 w-full">
+                            About
+                        </a>
+
+                        <a href="./service.html"
+                            class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 w-full">
+                            Services
+                        </a>
+
+                        <a href="."
+                            class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 activePage w-full">
+                            Gallery
+                        </a>
+
+                    </div>
+
+                    <div class="px-3 py-2 border-t border-muted mt-2">
+                        <button
+                            class=" bg-surface text-primary flex gap-1 border border-primary p-2 text-3xl font-semibold items-center hover:cursor-pointer contactFab w-full justify-center">
+                            <i class=" fa-regular fa-calendar-days text-primary"></i>BOOK NOW
+                        </button>
+                    </div>
+                </nav>
+            </div>
+
+
         </nav>
     </header>
 
     <main>
 
-        <section aria-label="Gallery Hero"
-            class="relative flex items-center justify-center bg-background h-[50vh]  py-8 text-3xl px-8 overflow-hidden box-border min-h-max">
+        <section aria-label="Gallery Hero" class="relative flex items-center justify-center
+           bg-background text-3xl
+           overflow-hidden box-border
+            h-auto
+           min-h-max
+           lg:h-[50vh]">
 
-            <div class="lg:grid grid-cols-9 p-10 scale-100 ">
+            <!-- Main Hero Container -->
+            <div class="relative w-full lg:grid grid-cols-9 p-10 scale-100">
 
-                <div class="absolute inset-0 bg-linear-to-r from-background via-surface/40 to-background/90 z-5"></div>
+                <!-- Background Overlay -->
+                <div class="absolute inset-0
+                   bg-linear-to-b
+                   from-background
+                   via-background/90
+                   to-background/30
+                   z-5
 
-                <div class="relative w-full text-3xl col-span-4 items-center self-center z-6">
-                    <p class="text-primary mb-3 text-lg font-semibold uppercase tracking-[0.5em]">Our Portfolio</p>
-                    <h1 class=" text-text font-extrabold uppercase leading-none mb-3 l md:text-5xl textspace-nowrap">
-                        Explore Our <span class="block text-primary ">Gallery</span></h1>
-                    <div class="h-0.5 w-full bg-linear-to-r from-gray-400/60 via-gray-400/30 to-transparent"></div>
+                   lg:bg-linear-to-r
+                   lg:from-background
+                   lg:via-surface/40
+                   lg:to-background/90"></div>
 
-                    <P class="pt-2 text-muted lg:max-w-[30.9vw]">
-                        A collection of moments, stories and emotions caputred through our lens.
-                    </P>
 
-                    <!--Gallery tabs-->
+                <!-- TEXT CONTENT -->
+                <div class="relative w-full text-3xl
+                   col-span-4
+                   items-center self-center
+                   z-6">
 
-                    <div role="tablist" aria-label="Gallery categories"
-                        class="mt-5 flex flex-wrap justify-center gap-3 lg:justify-start">
+                    <!-- Small Heading -->
+                    <p class="text-primary mb-3
+                       text-sm sm:text-lg
+                       font-semibold uppercase
+                       tracking-[0.5em]">
+                        Our Portfolio
+                    </p>
 
+
+                    <!-- Main Heading -->
+                    <h1 class="text-text
+                       font-extrabold
+                       uppercase
+                       leading-none
+                       mb-3
+                       text-4xl
+                       sm:text-5xl
+                       md:text-5xl">
+                        Explore Our
+
+                        <span class="block text-primary">
+                            Gallery
+                        </span>
+                    </h1>
+
+
+                    <!-- Divider -->
+                    <div class="h-0.5 w-full
+                       bg-linear-to-r
+                       from-gray-400/60
+                       via-gray-400/30
+                       to-transparent"></div>
+
+
+                    <!-- Description -->
+                    <p class="pt-2
+                       text-muted
+                       text-base
+                       leading-relaxed
+                       sm:text-lg
+                       md:max-w-[50dvw]
+                       lg:max-w-[30.9vw]">
+                        A collection of moments, stories and emotions
+                        captured through our lens.
+                    </p>
+
+
+                    <!-- Gallery Tabs -->
+                    <div role="tablist" aria-label="Gallery categories" class="mt-10
+                       flex
+                       flex-wrap
+                       justify-between
+                       gap-3
+
+                       md:mt-5
+                       md:justify-start">
 
                         <!-- ALL -->
                         <button type="button" role="tab" id="gallery-tab-all" aria-controls="gallery-all"
-                            aria-selected="true" data-category="all"
-                            class="gallery-tab rounded-xl bg-primary px-6 py-3 text-xs font-semibold uppercase tracking-wide text-text transition hover:cursor-pointer">
+                            aria-selected="true" data-category="all" class="gallery-tab
+                           rounded-xl
+                           bg-primary
+                           px-6 py-3
+                           text-xs
+                           font-semibold
+                           uppercase
+                           tracking-wide
+                           text-text
+                           transition
+                           hover:cursor-pointer">
                             All
                         </button>
 
+
                         <!-- WEDDINGS -->
                         <button type="button" role="tab" id="gallery-tab-weddings" aria-controls="gallery-weddings"
-                            aria-selected="false" data-category="weddings"
-                            class="gallery-tab rounded-xl border border-primary px-4 py-3 text-xs font-semibold uppercase tracking-wide text-text transition hover:cursor-pointer">
+                            aria-selected="false" data-category="weddings" class="gallery-tab
+                           rounded-xl
+                           border border-primary
+                           px-4 py-3
+                           text-xs
+                           font-semibold
+                           uppercase
+                           tracking-wide
+                           text-text
+                           transition
+                           hover:cursor-pointer">
                             Weddings
                         </button>
 
+
                         <!-- BIRTHDAYS -->
                         <button type="button" role="tab" id="gallery-tab-birthdays" aria-controls="gallery-birthdays"
-                            aria-selected="false" data-category="birthdays"
-                            class="gallery-tab rounded-xl border border-primary px-4 py-3 text-xs font-semibold uppercase tracking-wide text-text transition hover:cursor-pointer">
+                            aria-selected="false" data-category="birthdays" class="gallery-tab
+                           rounded-xl
+                           border border-primary
+                           px-4 py-3
+                           text-xs
+                           font-semibold
+                           uppercase
+                           tracking-wide
+                           text-text
+                           transition
+                           hover:cursor-pointer">
                             Birthday
                         </button>
 
+
                         <!-- EVENTS -->
                         <button type="button" role="tab" id="gallery-tab-events" aria-controls="gallery-events"
-                            aria-selected="false" data-category="events"
-                            class="gallery-tab rounded-xl border border-primary px-4 py-3 text-xs font-semibold uppercase tracking-wide text-text transition hover:cursor-pointer">
+                            aria-selected="false" data-category="events" class="gallery-tab
+                           rounded-xl
+                           border border-primary
+                           px-4 py-3
+                           text-xs
+                           font-semibold
+                           uppercase
+                           tracking-wide
+                           text-text
+                           transition
+                           hover:cursor-pointer">
                             Events
                         </button>
 
+
                         <!-- PORTRAITS -->
                         <button type="button" role="tab" id="gallery-tab-portraits" aria-controls="gallery-portraits"
-                            aria-selected="false" data-category="portraits"
-                            class="gallery-tab rounded-xl border border-primary px-4 py-3 text-xs font-semibold uppercase tracking-wide text-text transition hover:cursor-pointer">
+                            aria-selected="false" data-category="portraits" class="gallery-tab
+                           rounded-xl
+                           border border-primary
+                           px-4 py-3
+                           text-xs
+                           font-semibold
+                           uppercase
+                           tracking-wide
+                           text-text
+                           transition
+                           hover:cursor-pointer">
                             Portraits
                         </button>
 
+
                         <!-- OUTDOOR -->
                         <button type="button" role="tab" id="gallery-tab-outdoor" aria-controls="gallery-outdoor"
-                            aria-selected="false" data-category="outdoor"
-                            class="gallery-tab rounded-xl border border-primary px-4 py-3 text-xs font-semibold uppercase tracking-wide text-text transition hover:cursor-pointer">
+                            aria-selected="false" data-category="outdoor" class="gallery-tab
+                           rounded-xl
+                           border border-primary
+                           px-4 py-3
+                           text-xs
+                           font-semibold
+                           uppercase
+                           tracking-wide
+                           text-text
+                           transition
+                           hover:cursor-pointer">
                             Outdoor
                         </button>
+
                     </div>
+
+
+                    <!-- SOCIAL ICONS
+                 Mobile: below gallery tabs
+                 Desktop: right-side vertical rail
+            -->
+                    <div class="relative
+                       mt-10
+                       flex
+                       flex-row
+                       items-center
+                       justify-center
+                       gap-5
+                       z-10
+
+                       lg:absolute
+                       lg:top-1/6
+                       lg:left-[calc(100vw-80px)]
+                       lg:mt-0
+                       lg:flex-col
+                       lg:justify-center">
+
+                        <!-- Top Line -->
+                        <div class="block
+                           h-px
+                           w-20
+
+                           lg:w-px
+                           lg:h-8
+
+                           bg-muted"></div>
+
+
+                        <!-- Social Links -->
+                        <ul class="flex
+                           flex-row
+                           gap-5
+                           text-2xl
+
+                           lg:flex-col
+                           lg:space-y-5
+                           lg:gap-0">
+
+                            <!-- Instagram -->
+                            <li>
+                                <a href="#" aria-label="Instagram" class="text-text
+                                   transition-colors
+                                   hover:text-primary">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+
+                            <!-- Facebook -->
+                            <li>
+                                <a href="#" aria-label="Facebook" class="text-text
+                                   transition-colors
+                                   hover:text-primary">
+                                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+
+                            <!-- WhatsApp -->
+                            <li>
+                                <a href="#" aria-label="WhatsApp" class="text-text
+                                   transition-colors
+                                   hover:text-primary">
+                                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+                        <!-- Bottom Line -->
+                        <div class="block
+                           h-px
+                           w-20
+
+                           lg:w-px
+                           lg:h-8
+
+                           bg-muted"></div>
+
+                    </div>
+
                 </div>
 
-                <div class="col-span-5 w-full lg:max-w-[88%]">
-                    <img src="../../public/images/heroCamera.png" alt="A Camera"
-                        class="relative lg:scale-150  md:-translate-y-8 sm:translate-x-10 lg:translate-y-5 object-cover w-fit">
+
+                <!-- CAMERA
+             Mobile: absolute background visual
+             Desktop: returns to grid
+        -->
+                <div class="absolute
+                   -bottom-5
+                   right-[-20%]
+                   z-1
+                   w-[90%]
+
+                   lg:relative
+                   lg:bottom-auto
+                   lg:right-auto
+
+                   lg:col-span-5
+                   lg:w-full
+                   lg:max-w-[88%]">
+
+                    <img src="../../public/images/heroCamera.png" alt="A Camera" class="relative
+                       object-cover
+                       w-full
+
+                       lg:scale-150
+                       md:-translate-y-8
+                       sm:translate-x-10
+                       lg:translate-y-5">
+
                 </div>
 
-            </div>
-
-            <!--Social buttons-->
-            <div
-                class="absolute top-1/6 right-5 flex flex-col justify-center items-center z-10 gap-5 text-sm font-bold">
-                <div class="w-px h-8 bg-muted"></div>
-                <ul class="space-y-5 text-2xl">
-
-                    <li>
-                        <a href="#" aria-label="Instagram" class="text-text transition-colors hover:text-primary">
-                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" aria-label="Facebook" class="text-text transition-colors hover:text-primary">
-                            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#" aria-label="WhatsApp" class="text-text transition-colors hover:text-primary">
-                            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
-                        </a>
-                    </li>
-
-                </ul>
-                <div class="w-px h-8 bg-muted"></div>
             </div>
 
         </section>
+
 
         <section aria-labelledby="gallery-showcase-heading" class="bg-background px-6 py-16 sm:px-8 lg:px-12">
             <div class="mx-auto max-w-7xl">
@@ -234,9 +498,9 @@
 
                 <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
 
-                    <a href="." aria-label="Royal Paparazzi Home" class="block w-full overflow-hidden">
+                    <a href="../../index.html" aria-label="Royal Paparazzi Home" class="block w-full overflow-hidden">
 
-                        <img src="./public/images/logo.png" alt="Royal Paparazzi Photography"
+                        <img src="../../public/images/logo.png" alt="Royal Paparazzi Photography"
                             class="md:-translate-x-5 lg:w-7/12 h-auto">
                     </a>
 

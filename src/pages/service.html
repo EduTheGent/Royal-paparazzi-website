@@ -17,52 +17,99 @@
 
     <!-- HEADER -->
     <header aria-label="Navigation" class="relative border-muted border-b my-2">
+        <nav class="px-6 lg:text-2xl items-center justify-between w-full hidden md:flex">
 
-        <nav class="px-6 lg:text-2xl items-center flex justify-between w-full">
-
-            <!-- LOGO -->
             <div>
                 <a href="../../index.html">
                     <img src="../../public/images/logo.png" alt="" class="text-2xl w-50">
                 </a>
             </div>
 
-            <!-- NAVIGATION -->
-            <div class="text-text flex items-center text-center justify-between gap-10">
 
+            <div class="text-text flex items-center text-center justify-between gap-10">
                 <a href="../../index.html"
-                    class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70">
-                    Home
-                </a>
+                    class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 ">Home</a>
 
                 <a href="./about.html"
-                    class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70">
+                    class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70">
                     About
                 </a>
 
                 <a href="."
-                    class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 activePage">
+                    class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 activePage">
                     Services
                 </a>
 
                 <a href="./gallery.html"
-                    class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70">
+                    class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 ">
                     Gallery
                 </a>
 
             </div>
 
-            <!-- BOOK NOW -->
             <div>
                 <button
-                    class="bg-surface text-primary flex gap-1 border border-primary p-2 text-sm font-semibold items-center hover:cursor-pointer contactFab">
-                    <i class="fa-regular fa-calendar-days text-primary"></i>
-                    BOOK NOW
+                    class=" bg-surface text-primary flex gap-1 border border-primary p-2 text-sm font-semibold items-center hover:cursor-pointer contactFab">
+                    <i class="fa-regular fa-calendar-days text-primary"></i>BOOK NOW
                 </button>
             </div>
-
         </nav>
 
+        <nav id="mobileNavContainer" aria-label="Mobile Navigation" aria-expanded="false"
+            class="flex md:hidden justify-between p-4 overflow-hidden">
+
+            <div>
+                <a href="../../index.html">
+                    <img src="../../public/images/logo.png" alt="" class="text-2xl w-50">
+                </a>
+            </div>
+
+            <div aria-label="Harmburger Menu" id="mobileMenu"
+                class="relative space-y-3 flex flex-col justify-center hover:cursor-pointer">
+
+                <span class="h-1 w-15 bg-muted transition-all duration-300 ease-in-out"></span>
+                <span class="h-1 w-15 bg-muted transition-all duration-300 ease-in-out"></span>
+                <span class="h-1 w-15 bg-muted transition-all duration-300 ease-in-out"></span>
+
+
+                <nav id="mobileNav"
+                    class="absolute top-20 -right-100 bg-surface z-30 ease-in-out transition-all duration-1000 rounded-md ">
+
+
+
+                    <div
+                        class="text-text flex flex-col items-center text-center justify-between gap-10 w-[70dvw] text-4xl rounded-lg">
+                        <a href="../../index.html"
+                            class="hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 w-full">Home</a>
+
+                        <a href="./about.html"
+                            class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 w-full">
+                            About
+                        </a>
+
+                        <a href="."
+                            class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 activePage w-full">
+                            Services
+                        </a>
+
+                        <a href="./gallery.html"
+                            class=" hover:text-primary border-primary py-3 hover:opacity-85 active:opacity-70 w-full">
+                            Gallery
+                        </a>
+
+                    </div>
+
+                    <div class="px-3 py-2 border-t border-muted mt-2">
+                        <button
+                            class=" bg-surface text-primary flex gap-1 border border-primary p-2 text-3xl font-semibold items-center hover:cursor-pointer contactFab w-full justify-center">
+                            <i class=" fa-regular fa-calendar-days text-primary"></i>BOOK NOW
+                        </button>
+                    </div>
+                </nav>
+            </div>
+
+
+        </nav>
     </header>
 
 
@@ -279,9 +326,9 @@
                 <!-- BRAND -->
                 <div class="flex flex-col items-center text-center lg:items-start lg:text-left">
 
-                    <a href="." aria-label="Royal Paparazzi Home" class="block w-full overflow-hidden">
+                    <a href="../../index.html" aria-label="Royal Paparazzi Home" class="block w-full overflow-hidden">
 
-                        <img src="./public/images/logo.png" alt="Royal Paparazzi Photography"
+                        <img src="../../public/images/logo.png" alt="Royal Paparazzi Photography"
                             class="md:-translate-x-5 lg:w-7/12 h-auto">
 
                     </a>
