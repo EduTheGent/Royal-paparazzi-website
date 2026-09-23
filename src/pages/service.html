@@ -16,7 +16,7 @@
 <body class="bg-background">
 
     <!-- HEADER -->
-    <header aria-label="Navigation" class="relative border-muted border-b my-2">
+    <header aria-label="Navigation" class="relative border-border border-b my-2">
         <nav class="px-6 lg:text-2xl items-center justify-between w-full hidden md:flex">
 
             <div>
@@ -116,23 +116,32 @@
     <main>
 
         <!-- HERO -->
-        <section class="relative bg-background h-[50vh]  py-8 text-3xl px-8 overflow-hidden box-border min-h-max">
-            <div class="absolute inset-0 bg-linear-to-r from-background via-surface/40 to-background/90 z-5"></div>
-            <img src="../../public/images/img.png" alt="" class="w-full h-75 absolute inset-0">
+        <section aria-labelledby="services-heading"
+            class="relative isolate min-h-[50vh] overflow-hidden flex items-center">
 
-            <div class="absolute pt-10 px-8 left-12-translate-y-1/2 z-10">
+            <!-- Background Image -->
+            <img src="../../public/images/img.png" alt="" aria-hidden="true"
+                class="absolute inset-0 -z-20 h-full w-full object-cover object-[72%_center] sm:object-[68%_center] lg:object-center">
 
-                <p class="text-primary text-sm font-semibold tracking-widest">
-                    OUR SERVICES
+            <!-- Overlay -->
+            <div class="absolute inset-0 -z-10 bg-linear-to-r from-background via-background/80 to-background/30"
+                aria-hidden="true"></div>
+
+            <!-- Hero Content -->
+            <div class="relative z-10 w-full max-w-7xl mx-auto px-8 py-16">
+
+                <p class="text-primary text-sm font-semibold tracking-[0.25em] uppercase">
+                    Our Services
                 </p>
 
-                <h1 class="text-text text-5xl font-bold">
-                    WHAT WE <span class="text-red-500">DO</span>
+                <h1 id="services-heading"
+                    class="mt-2 max-w-2xl text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-text">
+                    What We <span class="text-primary">Do</span>
                 </h1>
 
-                <p class="text-text mt-4 max-w-3/4">
+                <p class="mt-5 max-w-xl text-base sm:text-lg leading-relaxed text-text/80">
                     We capture your most important moments with creativity,
-                    professionalism and attention to detail
+                    professionalism and attention to detail.
                 </p>
 
             </div>
@@ -140,172 +149,326 @@
         </section>
 
 
-        <!-- FIRST ROW OF SERVICES -->
-        <section class="flex justify-between px-8 gap-5 md:flex-row">
+        <!-- SERVICES -->
+        <section aria-labelledby="services-list-heading" class="px-6 sm:px-8 py-12">
 
-            <!-- WEDDING -->
-            <div class="border-l-primary border-b-primary border-t-muted border-r-muted border-1 w-150 rounded">
-
-                <img src="../../public/images/wedding-image.jpeg" alt="" class="w-full h-70">
-
-                <h2 class="text-text font-bold p-2">
-                    WEDDING
-                </h2>
-
-                <p class="text-muted p-2">
-                    Capture every beautiful moment of your special day
+            <header class="max-w-7xl mx-auto mb-8">
+                <p class="text-sm font-semibold tracking-widest text-primary uppercase">
+                    What We Offer
                 </p>
 
-                <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">
-                    BOOK NOW >
-                </button>
-
-            </div>
-
-
-            <!-- BIRTHDAY -->
-            <div class="border-muted border-1 rounded w-150">
-
-                <img src="../../public/images/birthday-image.jpeg" alt="" class="w-full h-70">
-
-                <h2 class="text-text font-bold p-2">
-                    BIRTHDAY
+                <h2 id="services-list-heading" class="mt-1 text-3xl font-bold text-text">
+                    Photography Services
                 </h2>
-
-                <p class="text-muted p-2">
-                    Celebraate your special moments with beautiful memories
-                </p>
-
-                <button class="text-primary font-bold mt-3 p-2 hover:translate-0.5">
-                    BOOK NOW >
-                </button>
-
-            </div>
+            </header>
 
 
-            <!-- PHOTOSHOOT -->
-            <div class="border-l-muted border-b-muted border-r-primary border-t-primary border-1 rounded w-150">
+            <ul class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <img src="../../public/images/photoshoot.jpg" alt="" class="w-full h-70">
+                <!-- WEDDING -->
+                <li>
+                    <article
+                        class="group h-full overflow-hidden rounded-lg border border-border bg-surface transition hover:-translate-y-1 hover:border-primary">
 
-                <h2 class="text-text font-bold p-2">
-                    PHOTOSHOOT
-                </h2>
+                        <div class="overflow-hidden">
+                            <img src="../../public/images/wedding-image.jpeg" alt="Wedding photography"
+                                class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
 
-                <p class="text-muted p-2">
-                    Professional portraits and creative photography
-                </p>
+                        <div class="flex h-full flex-col p-5">
 
-                <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">
-                    BOOK NOW >
-                </button>
+                            <h3 class="text-xl font-bold text-text">
+                                Wedding
+                            </h3>
 
-            </div>
+                            <p class="mt-2 text-muted leading-relaxed">
+                                Capture every beautiful moment of your special day.
+                            </p>
 
-        </section>
+                            <!-- ACTIONS -->
+                            <div class="flex justify-between items-center mt-6">
 
+                                <!-- BOOK NOW -->
+                                <button type="button" data-service="wedding"
+                                    class="contactFab flex flex-1 items-center justify-start text-primary font-bold transition hover:translate-x-1 hover:brightness-110 hover:cursor-pointer ">
+                                    Book Now →
+                                </button>
 
-        <!-- SECOND ROW OF SERVICES -->
-        <section class="flex justify-between px-8 gap-5 md:flex-row mt-5">
+                                <!-- VIEW SERVICE -->
+                                <a href="./gallery.html#wedding"
+                                    class="flex flex-1 items-center justify-center gap-2 rounded-md text-text font-bold transition hover:translate-1 tracking-wide">
+                                    View Service
+                                    <span aria-hidden="true">→</span>
+                                </a>
 
-            <!-- EVENTS -->
-            <div class="border-l-primary border-b-primary border-t-muted border-r-muted border-1 w-150 rounded">
+                            </div>
 
-                <img src="../../public/images/events.jpeg" alt="" class="w-full h-70">
+                        </div>
 
-                <h2 class="text-text font-bold p-2">
-                    EVENTS
-                </h2>
-
-                <p class="text-muted p-2">
-                    From small gatherings to grand celebrations
-                </p>
-
-                <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">
-                    BOOK NOW >
-                </button>
-
-            </div>
-
-
-            <!-- OUTDOOR -->
-            <div class="border-muted border-b-primary border-1 rounded w-150">
-
-                <img src="../../public/images/nature.png" alt="" class="w-full h-70">
-
-                <h2 class="text-text font-bold p-2">
-                    OUTDOOR
-                </h2>
-
-                <p class="text-muted p-2">
-                    Naturee, adventure and breathtaking landscapes
-                </p>
-
-                <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">
-                    BOOK NOW >
-                </button>
-
-            </div>
+                    </article>
+                </li>
 
 
-            <!-- SOCIAL EVENTS -->
-            <div class="border-l-muted border-b-muted border-r-primary border-t-primary border-1 rounded w-150">
+                <!-- BIRTHDAY -->
+                <li>
+                    <article
+                        class="group h-full overflow-hidden rounded-lg border border-border bg-surface transition hover:-translate-y-1 hover:border-primary">
 
-                <img src="../../public/images/social-events.jpeg" alt="" class="w-full h-70">
+                        <div class="overflow-hidden">
+                            <img src="../../public/images/birthday-image.jpeg" alt="Birthday photography"
+                                class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
 
-                <h2 class="text-text font-bold p-2">
-                    SOCIAL EVENTS
-                </h2>
+                        <div class="flex h-full flex-col p-5">
 
-                <p class="text-muted p-2">
-                    Parties, hangouts and social celebrations
-                </p>
+                            <h3 class="text-xl font-bold text-text">
+                                Birthday
+                            </h3>
 
-                <button class="text-primary font-bold mt-9 p-2 hover:translate-0.5">
-                    BOOK NOW >
-                </button>
+                            <p class="mt-2 text-muted leading-relaxed">
+                                Celebrate your special moments with beautiful memories.
+                            </p>
 
-            </div>
+                            <!-- ACTIONS -->
+                            <div class="flex justify-between items-center mt-6">
+
+                                <!-- BOOK NOW -->
+                                <button type="button" data-service="birthday"
+                                    class="contactFab flex flex-1 items-center justify-start text-primary font-bold transition hover:translate-x-1 hover:brightness-110 hover:cursor-pointer ">
+                                    Book Now →
+                                </button>
+
+                                <!-- VIEW SERVICE -->
+                                <a href="./gallery.html#birthday"
+                                    class="flex flex-1 items-center justify-center gap-2 rounded-md text-text font-bold transition hover:translate-1 tracking-wide">
+                                    View Service
+                                    <span aria-hidden="true">→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </li>
+
+
+                <!-- PHOTOSHOOT -->
+                <li>
+                    <article
+                        class="group h-full overflow-hidden rounded-lg border border-border bg-surface transition hover:-translate-y-1 hover:border-primary">
+
+                        <div class="overflow-hidden">
+                            <img src="../../public/images/photoshoot.jpg" alt="Professional photoshoot"
+                                class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
+
+                        <div class="flex h-full flex-col p-5">
+
+                            <h3 class="text-xl font-bold text-text">
+                                Photoshoot
+                            </h3>
+
+                            <p class="mt-2 text-muted leading-relaxed">
+                                Professional portraits and creative photography.
+                            </p>
+
+                            <!-- ACTIONS -->
+                            <div class="flex justify-between items-center mt-6">
+
+                                <!-- BOOK NOW -->
+                                <button type="button" data-service="Photoshoot"
+                                    class="contactFab flex flex-1 items-center justify-start text-primary font-bold transition hover:translate-x-1 hover:brightness-110 hover:cursor-pointer ">
+                                    Book Now →
+                                </button>
+
+                                <!-- VIEW SERVICE -->
+                                <a href="./gallery.html#photoshoot"
+                                    class="flex flex-1 items-center justify-center gap-2 rounded-md text-text font-bold transition hover:translate-1 tracking-wide">
+                                    View Service
+                                    <span aria-hidden="true">→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </li>
+
+
+                <!-- EVENTS -->
+                <li>
+                    <article
+                        class="group h-full overflow-hidden rounded-lg border border-border bg-surface transition hover:-translate-y-1 hover:border-primary">
+
+                        <div class="overflow-hidden">
+                            <img src="../../public/images/events.jpeg" alt="Event photography"
+                                class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
+
+                        <div class="flex h-full flex-col p-5">
+
+                            <h3 class="text-xl font-bold text-text">
+                                Events
+                            </h3>
+
+                            <p class="mt-2 text-muted leading-relaxed">
+                                From small gatherings to grand celebrations.
+                            </p>
+
+                            <!-- ACTIONS -->
+                            <div class="flex justify-between items-center mt-6">
+
+                                <!-- BOOK NOW -->
+                                <button type="button" data-service="events"
+                                    class="contactFab flex flex-1 items-center justify-start text-primary font-bold transition hover:translate-x-1 hover:brightness-110 hover:cursor-pointer ">
+                                    Book Now →
+                                </button>
+
+                                <!-- VIEW SERVICE -->
+                                <a href="./gallery.html#events"
+                                    class="flex flex-1 items-center justify-center gap-2 rounded-md text-text font-bold transition hover:translate-1 tracking-wide">
+                                    View Service
+                                    <span aria-hidden="true">→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </li>
+
+
+                <!-- OUTDOOR -->
+                <li>
+                    <article
+                        class="group h-full overflow-hidden rounded-lg border border-border bg-surface transition hover:-translate-y-1 hover:border-primary">
+
+                        <div class="overflow-hidden">
+                            <img src="../../public/images/nature.png" alt="Outdoor photography"
+                                class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
+
+                        <div class="flex h-full flex-col p-5">
+
+                            <h3 class="text-xl font-bold text-text">
+                                Outdoor
+                            </h3>
+
+                            <p class="mt-2 text-muted leading-relaxed">
+                                Nature, adventure and breathtaking landscapes.
+                            </p>
+
+                            <!-- ACTIONS -->
+                            <div class="flex justify-between items-center mt-6">
+
+                                <!-- BOOK NOW -->
+                                <button type="button" data-service="outdoor"
+                                    class="contactFab flex flex-1 items-center justify-start text-primary font-bold transition hover:translate-x-1 hover:brightness-110 hover:cursor-pointer ">
+                                    Book Now →
+                                </button>
+
+                                <!-- VIEW SERVICE -->
+                                <a href="./gallery.html#outdoor"
+                                    class="flex flex-1 items-center justify-center gap-2 rounded-md text-text font-bold transition hover:translate-1 tracking-wide">
+                                    View Service
+                                    <span aria-hidden="true">→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </li>
+
+
+                <!-- SOCIAL EVENTS -->
+                <li>
+                    <article
+                        class="group h-full overflow-hidden rounded-lg border border-border bg-surface transition hover:-translate-y-1 hover:border-primary">
+
+                        <div class="overflow-hidden">
+                            <img src="../../public/images/social-events.jpeg" alt="Social event photography"
+                                class="h-64 w-full object-cover transition duration-500 group-hover:scale-105">
+                        </div>
+
+                        <div class="flex h-full flex-col p-5">
+
+                            <h3 class="text-xl font-bold text-text">
+                                Social Events
+                            </h3>
+
+                            <p class="mt-2 text-muted leading-relaxed">
+                                Parties, hangouts and social celebrations.
+                            </p>
+
+                            <!-- ACTIONS -->
+                            <div class="flex justify-between items-center mt-6">
+
+                                <!-- BOOK NOW -->
+                                <button type="button" data-service="events"
+                                    class="contactFab flex flex-1 items-center justify-start text-primary font-bold transition hover:translate-x-1 hover:brightness-110 hover:cursor-pointer ">
+                                    Book Now →
+                                </button>
+
+                                <!-- VIEW SERVICE -->
+                                <a href="./gallery.html#events"
+                                    class="flex flex-1 items-center justify-center gap-2 rounded-md text-text font-bold transition hover:translate-1 tracking-wide">
+                                    View Service
+                                    <span aria-hidden="true">→</span>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+                </li>
+
+            </ul>
 
         </section>
 
 
         <!-- READY TO BOOK -->
-        <section class="px-8">
+        <section aria-labelledby="booking-cta-heading" class="px-6 sm:px-8 pb-12">
 
-            <div
-                class="border-1 border-t-primary border-b-primary border-r-muted rounded border-l-muted flex justify-between mb-5 mt-5">
+            <div class="relative isolate max-w-7xl mx-auto overflow-hidden rounded-lg border border-border">
 
-                <div class="flex gap-5 items-center px-8">
+                <!-- CTA Background Image -->
+                <img src="../../public/images/camera.png" alt="" aria-hidden="true"
+                    class="absolute inset-0 -z-20 h-full w-full object-cover object-center">
 
-                    <i class="fa-regular fa-camera text-primary text-6xl"></i>
+                <!-- CTA Overlay -->
+                <div class="absolute inset-0 -z-10 bg-background/85" aria-hidden="true"></div>
 
-                    <div>
+                <div
+                    class="relative z-10 flex flex-col gap-6 px-6 py-10 sm:px-10 lg:flex-row lg:items-center lg:justify-between">
 
-                        <h2 class="text-text font-bold">
-                            READY TO BOOK?
-                        </h2>
+                    <div class="flex items-start gap-5">
 
-                        <p class="text-text">
-                            Let's turn your memories into timeless memories.
-                        </p>
+                        <i class="fa-regular fa-camera text-primary text-4xl sm:text-5xl" aria-hidden="true"></i>
 
-                    </div>
+                        <div>
+                            <h2 id="booking-cta-heading" class="text-2xl font-bold text-text">
+                                Ready to Book?
+                            </h2>
 
-                </div>
-
-
-                <div class="relative">
-
-                    <img src="../../public/images/camera.png" alt="" class="w-80 h-40 object-cover">
-
-                    <div class="absolute left-5 top-1/2 -translate-y-1/2">
-
-                        <button class="text-text font-bold bg-primary mt-8 rounded p-2 hover:translate-0.5">
-                            BOOK NOW >
-                        </button>
+                            <p class="mt-1 text-text/80">
+                                Let's turn your memories into timeless memories.
+                            </p>
+                        </div>
 
                     </div>
+
+
+                    <button type="button"
+                        class="contactFab self-start rounded bg-primary px-6 py-3 font-bold text-text transition hover:brightness-110 hover:translate-x-1 hover:cursor-pointer lg:self-center">
+                        Book Now →
+                    </button>
 
                 </div>
 
@@ -316,8 +479,9 @@
     </main>
 
 
+
     <!-- FOOTER -->
-    <footer class="bg-background text-text pr-5 pl-1.5 border-t border-muted">
+    <footer class="bg-background text-text pr-5 pl-1.5 border-t border-border">
 
         <div class="max-w-7xl mx-auto px-6 sm:px-10 md:px-12 lg:px-0 py-10 lg:py-12">
 
@@ -678,6 +842,10 @@
 
                                     <option value="events">
                                         Events
+                                    </option>
+
+                                    <option value="outdoor">
+                                        Outdoor
                                     </option>
 
                                     <option value="others">

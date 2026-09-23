@@ -18,7 +18,7 @@
 
 <body class="bg-background text-text">
 
-    <header aria-label="Navigation" class="relative border-muted border-b my-2">
+    <header aria-label="Navigation" class="relative border-border border-b my-2">
         <nav class="px-6 lg:text-2xl items-center justify-between w-full hidden md:flex">
 
             <div>
@@ -74,9 +74,9 @@
 
 
                 <nav id="mobileNav"
-                    class="absolute top-20 -right-100 bg-surface z-30 ease-in-out transition-all duration-1000 rounded-md">
+                    class="absolute top-20 -right-100 bg-surface z-30 ease-in-out transition-all duration-1000 rounded-md w-[50dvw] max-h-[45dvh]">
                     <div
-                        class="text-text flex flex-col items-center text-center justify-between gap-10 w-[70dvw] text-4xl rounded-lg">
+                        class="text-text flex flex-col items-center text-center justify-between gap-10 text-4xl rounded-lg">
                         <a href="." class="py-3 hover:opacity-85 active:opacity-50 activePage w-full">Home</a>
 
                         <a href="./src/pages/about.html"
@@ -450,7 +450,7 @@
         </section>
 
         <section aria-label="ROYAL PAPARAZZI SERVICES"
-            class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 space-y-5 sm:gap-3 sm:space-y-8 m-3 overflow-hidden px-10">
+            class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-6 space-y-5 sm:gap-3 sm:space-y-8 m-3 overflow-hidden px-4 sm:px-6">
             <a href="./src/pages/gallery.html#weddings">
                 <article
                     class="border shadow-sm shadow-muted border-border rounded-md overflow-hidden bg-background text-text">
@@ -599,7 +599,7 @@
 
     </main>
 
-    <footer class="bg-background text-text pr-5 pl-1.5 border-t border-muted">
+    <footer class="bg-background text-text pr-5 pl-1.5 border-t border-border">
 
         <div class="max-w-7xl mx-auto px-6 sm:px-10 md:px-12 lg:px-0 py-10 lg:py-12">
 
@@ -966,6 +966,10 @@
 
                                     <option value="events">
                                         Events
+                                    </option>
+
+                                    <option value="outdoor">
+                                        Outdoor
                                     </option>
 
                                     <option value="others">

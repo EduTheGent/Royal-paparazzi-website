@@ -11,9 +11,21 @@ const contactTab = document.querySelector('#contactTab');
 const contactPanel = document.querySelector('#contactOptions')
 
 contactFab.forEach((event) => event.addEventListener('click', () => {
+
     modal.showModal();
+
     event.setAttribute("aria-expanded", "true");
+
+    const selectedService = event.dataset.service.toLowerCase();
+
+    if (selectedService) {
+        const serviceSelect = document.querySelector('#booking-service');
+
+        serviceSelect.value = selectedService;
+    }
+
 }));
+
 
 closeModal.addEventListener('click', () => {
     modal.close();
@@ -65,7 +77,7 @@ const mobileNavContainer = document.getElementById("mobileNavContainer");
 const mobileMenu = document.getElementById("mobileMenu");
 const mobileNav = document.getElementById("mobileNav");
 const [first, second, third] =
-  document.querySelectorAll("#mobileMenu span");
+    document.querySelectorAll("#mobileMenu span");
 
 
 mobileMenu.addEventListener('click', () => {
