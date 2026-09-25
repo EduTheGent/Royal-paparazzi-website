@@ -792,12 +792,28 @@
   .border-collapse {
     border-collapse: collapse;
   }
+  .-translate-x-2 {
+    --tw-translate-x: calc(var(--spacing) * -2);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .-translate-x-5 {
     --tw-translate-x: calc(var(--spacing) * -5);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .-translate-x-7 {
+    --tw-translate-x: calc(var(--spacing) * -7);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-7\.5 {
+    --tw-translate-x: calc(var(--spacing) * -7.5);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
   .-translate-x-8 {
     --tw-translate-x: calc(var(--spacing) * -8);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .-translate-x-10 {
+    --tw-translate-x: calc(var(--spacing) * -10);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1 {
